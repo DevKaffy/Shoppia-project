@@ -1,3 +1,5 @@
+@tailwind base;
+@tailwind components;
 html, body{
   padding: 0;
   margin: 0;
@@ -10,3 +12,4 @@ html, body{
 :root{
   font-size: 16px;
 }
+@tailwind utilities;

@@ -3,9 +3,9 @@ import './Navbar.css'
 
 const Navbar = () => {
   return (
-    <div>
+    <div className='navbar'>
       <h2>Exclusive</h2>
-      <div>
+      <div className='nav-items'>
         <span>Home</span>
         <span>Contact</span>
         <span>About</span>
