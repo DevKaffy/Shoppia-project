@@ -1,0 +1,6 @@
+.signup{
+    @apply grid grid-cols-2;
+}
+.signup-img{
+    @apply pt-[3.75rem]
+}

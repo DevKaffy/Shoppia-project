@@ -4,20 +4,20 @@ import './Navbar.css'
 
 const Navbar = () => {
   return (
-    <div className='navbar'>
-      <h2 className='exclusive'>Exclusive</h2>
-      <div className='nav-items'>
-        <Link to='/'>Home</Link>
-        <Link to='/contact'>Contact</Link>
-        <Link to='/about'>About</Link>
-        <Link to='/signup'>Sign Up</Link>
+    <div className="navbar">
+      <h2 className="exclusive">Exclusive</h2>
+      <div className="nav-items">
+        <Link to="/">Home</Link>
+        <Link to="/contact">Contact</Link>
+        <Link to="/about">About</Link>
+        <Link to="/signup">Sign Up</Link>
       </div>
-      <div className='search'>
-        <p>What are you looking for?</p>
+      <div className="search">
+        <input type="text" placeholder="What are you looking for?" />
         <img src="/Search.svg" alt="" />
       </div>
     </div>
-  )
+  );
 }
 
 export default Navbar

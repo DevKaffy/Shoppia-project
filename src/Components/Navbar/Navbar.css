@@ -1,5 +1,5 @@
 .navbar{
-@apply flex pl-[5rem] pr-[5rem] pt-[2.3rem] pb-4 border-b-[1px];
+@apply flex items-center pl-[5rem] pr-[5rem] pt-[2.3rem] pb-4 border-b-[1px];
 }
 .exclusive{
     @apply mr-[14.5rem] font-bold text-2xl;
@@ -8,7 +8,10 @@
     @apply flex gap-8 mr-[13.12rem];
 }
 .search{
-    @apply flex gap-[2.3rem] bg-[#F5F5F5] pt-[0.62rem] pb-[0.62rem] pl-[1.25rem] pr-[0.75rem] rounded-[5px];
+    @apply flex items-center gap-[2.3rem] bg-[#F5F5F5] pt-[0.62rem] pb-[0.62rem] pl-[1.25rem] pr-[0.75rem] rounded-[5px];
+}
+.search input{
+    @apply text-[0.75rem] outline-none rounded-[2px]  bg-[#F5F5F5];
 }
 .search img{
     @apply w-[1.5rem] h-[1.5rem];
