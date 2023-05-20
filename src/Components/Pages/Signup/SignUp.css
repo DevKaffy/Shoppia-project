@@ -5,12 +5,17 @@
     @apply w-[50.31rem] h-[48.81rem];
 }
 .right-container{
-    @apply pt-[7.84rem];
+    @apply pt-[7.84rem] pr-[8.46rem];
+}
+.form-wrapper input{
+    @apply border-b-2 pt-[5px]  flex flex-col mb-4 text-[12px] w-full outline-none;
 }
 .right-container h2{
     @apply font-medium text-[2.25rem] mb-[1.5rem];
 }
-
+.detail{
+    @apply mb-[3rem]
+}
 .google-container{
     @apply flex items-center justify-center;
 }

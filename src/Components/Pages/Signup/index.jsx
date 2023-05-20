@@ -9,19 +9,19 @@ const SignUp = () => {
         <div className="signup-img">
           <img src="/Side Image.png" alt="" />
         </div>
-        <div className='right-container'>
+        <div className="right-container">
           <h2>Create an account</h2>
-          <p>Enter your details below</p>
-          <form>
-            <p>Name</p>
-            <p>Email or Phone Number</p>
-            <p>Password</p>
-            <button>Create Account</button>
-            <div className='google-container'>
+          <p className="detail">Enter your details below</p>
+          <form className="form-wrapper">
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Email or Phone Number" />
+            <input type="text" placeholder="Password" />
+            <button className="w-full bg-[#DB4444] pt-[1rem] pb-[1rem] rounded-[4px] text-[white] mt-[2.5rem]">Create Account</button>
+          </form>
+            <div className="google-container">
               <img src="/public/Icon-Google.png" alt="" />
               <p>Sign up with Google</p>
             </div>
-          </form>
         </div>
       </main>
     </Layout>
