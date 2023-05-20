@@ -1,6 +1,16 @@
 .signup{
-    @apply grid grid-cols-2;
+    @apply grid grid-cols-[2fr_1fr] pt-[3.75rem];
 }
 .signup-img{
-    @apply pt-[3.75rem]
+    @apply w-[50.31rem] h-[48.81rem];
+}
+.right-container{
+    @apply pt-[7.84rem];
+}
+.right-container h2{
+    @apply font-medium text-[2.25rem] mb-[1.5rem];
+}
+
+.google-container{
+    @apply flex items-center justify-center;
 }

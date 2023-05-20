@@ -14,6 +14,7 @@ const Navbar = () => {
       </div>
       <div className="search">
         <input type="text" placeholder="What are you looking for?" />
+        {/* <input type="text" value="What are you looking for?" /> */}
         <img src="/Search.svg" alt="" />
       </div>
     </div>
