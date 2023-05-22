@@ -1,0 +1,6 @@
+.footer{
+    @apply mt-[8.75rem] bg-black  text-white pl-[8.4rem] pr-[8.4rem] pt-[5rem];
+}
+.title{
+    @apply flex gap-x-[5rem] text-[1rem] font-bold items-center justify-center;
+}
