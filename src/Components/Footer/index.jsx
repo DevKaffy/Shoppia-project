@@ -3,7 +3,12 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div >
+      <span>Shoppia</span>
+      <span>Support</span>
+      <span>Account</span>
+      <span>Quick Link</span>
+    </div>
   )
 }
 
