@@ -5,7 +5,7 @@ import './Navbar.css'
 const Navbar = () => {
   return (
     <div className="navbar">
-      <h2 className="exclusive">Exclusive</h2>
+      <h2 className="shoppia">Shoppia</h2>
       <div className="nav-items">
         <Link to="/">Home</Link>
         <Link to="/contact">Contact</Link>
@@ -14,7 +14,6 @@ const Navbar = () => {
       </div>
       <div className="search">
         <input type="text" placeholder="What are you looking for?" />
-        {/* <input type="text" value="What are you looking for?" /> */}
         <img src="/Search.svg" alt="" />
       </div>
     </div>

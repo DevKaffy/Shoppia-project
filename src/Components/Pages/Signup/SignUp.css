@@ -17,5 +17,8 @@
     @apply mb-[3rem]
 }
 .google-container{
-    @apply flex items-center justify-center;
+    @apply flex items-center gap-4 justify-center border-2 pt-4 pb-4 pr-4 pl-4 rounded-[4px] mb-4;
+}
+.account{
+    @apply flex gap-4 items-center justify-center;
 }
