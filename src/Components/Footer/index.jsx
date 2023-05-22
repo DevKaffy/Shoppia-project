@@ -10,7 +10,7 @@ const Footer = () => {
         <span>Account</span>
         <span>Quick Link</span>
       </div>
-      <div className="flex gap-x-[7rem]">
+      <div className="flex gap-x-[12rem]">
         <span>Subscribe</span>
         <span>
           111 Bijoy sarani, Dhaka, <br /> DH 1515, Bangladesh.
@@ -20,6 +20,19 @@ const Footer = () => {
       </div>
       <div className="flex gap-x-[7rem]">
         <span>Get 10% off your first order</span>
+        <span>shoppia@gmail.com</span>
+        <span>Login/Register</span>
+        <span>Terms of Use</span>
+      </div>
+      <div className="flex gap-x-[17rem] border-b-1 pb-[2rem]">
+        <span>Cart</span>
+        <span>Contact</span>
+        <span>FAQ</span>
+        <span>Social media handles</span>
+      </div>
+      <div className="self-center">
+        {" "}
+        © Copyright Kafilat, Mathew and Tracy All right reserved
       </div>
     </div>
   );
