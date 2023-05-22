@@ -1,6 +1,6 @@
 .footer{
-    @apply mt-[8.75rem] bg-black  text-white pl-[8.4rem] pr-[8.4rem] pt-[5rem];
+    @apply mt-[8.75rem] bg-black  text-white pl-[8.4rem] pr-[8.4rem] pt-[5rem] pb-[2rem];
 }
 .title{
-    @apply flex gap-x-[5rem] text-[1rem] font-bold items-center justify-center;
+    @apply flex gap-x-[8rem] font-bold;
 }
