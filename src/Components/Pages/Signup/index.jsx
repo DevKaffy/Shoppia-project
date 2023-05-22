@@ -20,7 +20,7 @@ const SignUp = () => {
             <input type="text" placeholder="Email" />
             <input type="text" placeholder="Phone Number" required />
             <input type="text" placeholder="Password" required />
-            <button className="w-full bg-[#DB4444] pt-[1rem] pb-[1rem] rounded-[4px] text-[white] mt-[2.5rem] mb-4">
+            <button className="w-full bg-[rgb(219,68,68)] pt-[1rem] pb-[1rem] rounded-[4px] text-[white] mt-[2.5rem] mb-4">
               Create Account
             </button>
           </form>
