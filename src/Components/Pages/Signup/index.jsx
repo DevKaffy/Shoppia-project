@@ -24,10 +24,6 @@ const SignUp = () => {
               Create Account
             </button>
           </form>
-          <div className="google-container">
-            <img src="/public/Icon-Google.png" alt="" />
-            <p>Sign up with Google</p>
-          </div>
           <div className="account">
             <p>Already have an account?</p>
             <Link to="/login">Log in</Link>
