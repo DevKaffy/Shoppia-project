@@ -1,4 +1,4 @@
-const items = [
+export const items = [
   {
     icon: "/arrow.svg",
     link: "Women's Fashion",
