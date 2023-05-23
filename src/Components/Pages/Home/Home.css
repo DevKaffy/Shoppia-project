@@ -1,0 +1,3 @@
+.home{
+    @apply grid grid-cols-[10rem_2fr] pl-[8.4rem] pt-[2.5rem] pr-[8.43rem]
+}
