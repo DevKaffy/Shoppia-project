@@ -2,5 +2,5 @@
     @apply mt-[8.75rem] bg-black  text-white pl-[8.4rem] pr-[8.4rem] pt-[5rem] pb-[2rem];
 }
 .title{
-    @apply flex gap-x-[15rem] font-bold;
+    @apply flex gap-x-[14rem] font-bold;
 }

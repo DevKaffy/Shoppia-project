@@ -10,29 +10,29 @@ const Footer = () => {
         <span>Account</span>
         <span>Quick Link</span>
       </div>
-      <div className="flex gap-x-[12rem]">
+      <div className="flex gap-x-[11rem]">
         <span>Subscribe</span>
         <span>
-          111 Bijoy sarani, Dhaka, <br /> DH 1515, Bangladesh.
-        </span>
+          111 Bijoy sarani, Dhaka 
+          </span>
         <span>MY Account</span>
         <span>Privacy Policy</span>
       </div>
-      <div className="flex gap-x-[7rem]">
+      <div className="flex gap-x-[8rem]">
         <span>Get 10% off your first order</span>
         <span>shoppia@gmail.com</span>
         <span>Login/Register</span>
         <span>Terms of Use</span>
       </div>
-      <div className="flex gap-x-[17rem] border-b-1 pb-[2rem]">
+      <div className="flex gap-x-[17rem] border-b pb-[2rem]">
         <span>Cart</span>
         <span>Contact</span>
         <span>FAQ</span>
         <span>Social media handles</span>
       </div>
-      <div className="self-center">
+      <div className="flex items-center justify-center pt-4">
         {" "}
-        © Copyright Kafilat, Mathew and Tracy All right reserved
+        © Copyright Kafilat, Mathew and Tracy. All right reserved
       </div>
     </div>
   );
