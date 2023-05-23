@@ -16,6 +16,10 @@ const Navbar = () => {
         <input type="text" placeholder="What are you looking for?" />
         <img src="/Search.svg" alt="" />
       </div>
+      <div className='flex items-center gap-4 pl-[1.8rem]'>
+        <img src="/Wishlist.svg" alt="" />
+        <img src="/Cart1.svg" alt="" />
+      </div>
     </div>
   );
 }

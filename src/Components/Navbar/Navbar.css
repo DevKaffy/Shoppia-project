@@ -1,5 +1,5 @@
 .navbar{
-@apply flex items-center pl-[5rem] pr-[5rem] pt-[2.3rem] pb-4 border-b-[1px];
+@apply flex items-center pl-[5rem] pr-[3rem] pt-[2.3rem] pb-4 border-b-[1px];
 }
 .nav-items :hover{
     @apply underline;
