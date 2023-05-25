@@ -1,3 +1,6 @@
 .home{
-    @apply grid grid-cols-[10rem_2fr] pl-[5rem] pt-[2.5rem] pr-[5rem]
+    @apply grid grid-cols-[10rem_2fr] pl-[5rem] pt-[2.5rem] pr-[5rem];
 }
+/* .right-container{
+    @apply flex-grow-1;
+} */

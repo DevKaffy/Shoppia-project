@@ -1,28 +1,35 @@
 export const items = [
   {
+    title: "Women's Fashion",
     icon: "/arrow.svg",
-    link: "Women's Fashion",
+    path: "women's fashion"
   },
   {
+    title: "Men's Fashion",
     icon: "/arrow.svg",
-    link: "Men's Fashion",
   },
   {
-    link: "Electronics",
+    title: "Electronics",
+    path: "/Electronics"
   },
   {
-    link: "Home & Lifestyle",
+    title: "Home & Lifestyle",
+    path: "/Home & Lifestyle"
   },
   {
-    link: "Medicine",
+    title: "Medicine",
+    path: "/Medicine"
   },
   {
-    link: "Sports & Outdoor",
+    title: "Sports & Outdoor",
+    path: "/Sports & outdoor"
   },
   {
-    link: "Groceries & Pets",
+    title: "Groceries & Pets",
+    path: "/Groceries & Pets"
   },
   {
-    link: "Health & Beauty",
+    title: "Health & Beauty",
+    path: "/Health & Beauty"
   },
 ];

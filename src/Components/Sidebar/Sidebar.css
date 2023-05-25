@@ -1,0 +1,3 @@
+.side-bar{
+    @apply bg-slate-400 h-[100%] overflow-auto
+}
