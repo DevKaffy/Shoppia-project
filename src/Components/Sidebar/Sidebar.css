@@ -1,9 +1,15 @@
 .sidebar{
-    @apply bg-slate-400 h-[100%] p-4 overflow-auto;
+    @apply  h-[100%] p-4 overflow-auto;
 }
 .side-bar-item{
     @apply p-4 block;
 }
 .side-flex{
-    @apply flex items-center justify-between;
+    @apply flex items-center justify-between p-4 transition hover:bg-slate-400 duration-150 ;
+}
+.side-flex{
+    @apply cursor-pointer;
+}
+.open{
+    @apply rotate-180;
 }
