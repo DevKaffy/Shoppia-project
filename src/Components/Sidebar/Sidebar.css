@@ -1,15 +1,21 @@
 .sidebar{
     @apply  h-[100%] p-4 overflow-auto;
 }
-.side-bar-item{
-    @apply p-4 block;
+.sidebar-item{
+    padding: 1rem;
+    display: block;
+    transition: background-color .15s;
 }
 .side-flex{
-    @apply flex items-center justify-between p-4 transition hover:bg-slate-400 duration-150 ;
+    @apply flex items-center justify-between p-4 ;
 }
-.side-flex{
-    @apply cursor-pointer;
+.side-flex .toggle-btn{
+    cursor: pointer; 
+    transition: transform .3s;
 }
-.open{
+.side-flex .toggle-btn{
+transform: rotate(180deg);
+}
+/* .open{
     @apply rotate-180;
-}
+} */

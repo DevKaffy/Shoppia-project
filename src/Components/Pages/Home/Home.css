@@ -1,3 +1,3 @@
 .home{
-    @apply grid grid-cols-[14rem_2fr] pl-[5rem] pt-[2.5rem] pr-[5rem];
+    @apply grid grid-cols-[16rem_2fr] pl-[5rem] pt-[2.5rem] pr-[5rem];
 }
