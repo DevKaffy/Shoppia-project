@@ -1,9 +1,13 @@
 import React from 'react'
+import SidebarItem from './SidebarItem'
+import './Sidebar.css'
 
 const Sidebar = () => {
   return (
     <div>
-      <div className='side-bar'>Sidebar</div>
+      <div className='sidebar'>
+        <SidebarItem/>
+      </div>
     </div>
   )
 }
