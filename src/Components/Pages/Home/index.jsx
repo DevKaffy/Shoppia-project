@@ -10,7 +10,7 @@ const Home = () => {
         <main className='home'>
           <div className='top-items'>
             <Sidebar />
-            <img className='pl-[2.8rem]' src="/Frame 560.png" alt="" />
+            <img className='pl-[2.8rem] mb-4' src="/Frame 560.png" alt="" />
           </div>
             <div className='main-container'>
               <div>
