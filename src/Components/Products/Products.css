@@ -1,0 +1,3 @@
+.product-items{
+    @apply grid grid-cols-3;
+}

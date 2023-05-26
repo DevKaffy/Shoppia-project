@@ -33,3 +33,26 @@ export const items = [
     path: "/Health & Beauty"
   },
 ];
+
+export const products = [
+  {
+    image: "/pes.png",
+    title: "HAVIT HV-G92 Gamepad",
+    price: "$120",
+  },
+  {
+    image: "/keyboard.png",
+    title: "AK-900 Wired Keyboard",
+    price: "$960",
+  },
+  {
+    image: "/TV.png",
+    title: "IPS LCD Gaming Monitor",
+    price: "$370",
+  },
+  {
+    image: "/chair.png",
+    title: "S-Series Comfort Chair ",
+    price: "$375",
+  },
+];
