@@ -20,7 +20,7 @@ const Home = () => {
               <img src="/Fill with Right Arrow.png" alt="" />
             </div>
             <div>
-              <div className="text-[#DB4444] font-semibold">Products</div>
+              <div className="text-[#DB4444] font-semibold mb-[1rem]">Products</div>
               <Products />
             </div>
           </div>
