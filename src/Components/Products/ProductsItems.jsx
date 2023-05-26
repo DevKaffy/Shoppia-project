@@ -5,7 +5,7 @@ const ProductsItems = ({image, title, price}) => {
   return (
     <div>
       <div>
-        <div className="h-[15.6rem] w-[16.8rem] flex items-center justify-center">
+        <div className="h-[15.6rem] w-[16.8rem] flex items-center justify-center bg-[#F5F5F5]">
           <img src={image} alt="" />
         </div>
         <p className="mb-4">{title}</p>
