@@ -1,9 +1,9 @@
-import React from 'react'
-import Category from '../../Category/Category'
-import Layout from '../../Layout'
-import Products from '../../Products/Products'
-import Sidebar from '../../Sidebar'
-import './Home.css'
+import React from "react";
+import Category from "../../Category/Category";
+import Layout from "../../Layout";
+import Products from "../../Products/Products";
+import Sidebar from "../../Sidebar";
+import "./Home.css";
 
 const Home = () => {
   return (
@@ -20,19 +20,21 @@ const Home = () => {
               <img src="/Fill with Right Arrow.png" alt="" />
             </div>
             <div>
-            <div className="text-[#DB4444] font-semibold">Products</div>
-            <Products />
+              <div className="text-[#DB4444] font-semibold">Products</div>
+              <Products />
             </div>
           </div>
           <div className="categories">
             <div className="text-[#DB4444] font-semibold">Categories</div>
-            <div className='text-[2.25rem] font-semibold mb-[3.75rem]'>Browse By Category</div>
+            <div className="text-[2.25rem] font-semibold mb-[3.75rem]">
+              Browse By Category
+            </div>
             <Category />
           </div>
         </div>
       </main>
     </Layout>
   );
-}
+};
 
-export default Home
+export default Home;

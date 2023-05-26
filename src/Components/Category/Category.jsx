@@ -8,7 +8,7 @@ const Category = () => {
     <div className='flex items-center flex-wrap justify-between'>
         {
             categories.map((category, index)=>(
-                <div className='border pt-[1.5rem] pb-[1.5rem] pr-[2rem] pl-[2rem] flex flex-col items-center justify-center'>
+                <div className='categ-container'>
                     <CategoryItems 
                     key={`categories - ${index} `}
                     icon={category.icon}

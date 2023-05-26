@@ -59,27 +59,27 @@ export const products = [
 
 export const categories = [
   {
-    icon: "/phone.png",
+    icon: "/phone.svg",
     title: "Phones",
   },
   {
-    icon: "/computer.png",
+    icon: "/computer.svg",
     title: "Computers",
   },
   {
-    icon: "/smartwatch.png",
+    icon: "/watch.svg",
     title: "SmartWatch",
   },
   {
-    icon: "/camera.png",
+    icon: "/camera.svg",
     title: "Camera",
   },
   {
-    icon: "/headphones.png",
+    icon: "/headphone.svg",
     title: "HeadPhones",
   },
   {
-    icon: "/gamepad.png",
+    icon: "/gamepad.svg",
     title: "Gaming",
   },
 ];
