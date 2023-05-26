@@ -20,12 +20,18 @@ const Home = () => {
               <img src="/Fill with Right Arrow.png" alt="" />
             </div>
             <div>
-              <div className="text-[#DB4444] font-semibold mb-[1rem]">Products</div>
+              <div className="flex gap-4 items-center mb-[1rem]">
+                <img src="/Rectangle 18.png" alt="" />
+                <div className="text-[#DB4444] font-semibold">Products</div>
+              </div>
               <Products />
             </div>
           </div>
           <div className="categories">
-            <div className="text-[#DB4444] font-semibold">Categories</div>
+            <div className="flex gap-4 items-center mb-[1rem]">
+              <img src="/Rectangle 18.png" alt="" />
+              <div className="text-[#DB4444] font-semibold">Categories</div>
+            </div>
             <div className="text-[2.25rem] font-semibold mb-[3.75rem]">
               Browse By Category
             </div>
