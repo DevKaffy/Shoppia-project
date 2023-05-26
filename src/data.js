@@ -56,3 +56,30 @@ export const products = [
     price: "$375",
   },
 ];
+
+export const categories = [
+  {
+    icon: "/phone.png",
+    title: "Phones",
+  },
+  {
+    icon: "/computer.png",
+    title: "Computers",
+  },
+  {
+    icon: "/smartwatch.png",
+    title: "SmartWatch",
+  },
+  {
+    icon: "/camera.png",
+    title: "Camera",
+  },
+  {
+    icon: "/headphones.png",
+    title: "HeadPhones",
+  },
+  {
+    icon: "/gamepad.png",
+    title: "Gaming",
+  },
+];

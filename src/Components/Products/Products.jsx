@@ -14,7 +14,7 @@ const Products = () => {
         />
       ))}
       <div className='flex items-center justify-center place-items-center'>
-      <button className="bg-[#DB4444] text-white pt-4 pb-4 pr-12 pl-12">View All Products</button>
+      <button className="bg-[#DB4444] text-white pt-4 pb-4 pr-12 pl-12 rounded-[4px]">View All Products</button>
       </div>
     </div>
   );
