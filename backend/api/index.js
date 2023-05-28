@@ -19,6 +19,12 @@ const getUserProducts = require('./routes/productRoutes/getUserProducts');
 const deleteProduct = require('./routes/productRoutes/deleteProduct');
 const getProduct = require('./routes/productRoutes/getProduct');
 const updateProduct = require('./routes/productRoutes/updateProduct');
+
+const addToCart = require('./routes/cartRoutes/addToCart');
+const getCartItems = require('./routes/cartRoutes/getCartItems');
+const removeFromCart = require('./routes/cartRoutes/removeFromCart');
+const clearCart = require('./routes/cartRoutes/clearCart');
+
 //const { authenticate, authorize} = require('./middlewares/authenticate');
 const bodyParser = require('body-parser');
 const db = require('./config');
@@ -49,6 +55,11 @@ app.use('/api/v1', getUserProducts);
 app.use('/api/v1', deleteProduct);
 app.use('/api/v1', getProduct);
 app.use('/api/v1', updateProduct);
+
+app.use('/api/v1', addToCart);
+app.use('/api/v1', getCartItems);
+app.use('/api/v1', clearCart);
+app.use('/api/v1', removeFromCart);
 // Other routes will be added when ready
 
 const port = 5000;
