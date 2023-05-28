@@ -24,6 +24,9 @@ const Home = () => {
                 <img src="/Rectangle 18.png" alt="" />
                 <div className="text-[#DB4444] font-semibold">Products</div>
               </div>
+              <div className="text-[2.25rem] font-semibold mb-[3.75rem]">
+                Explore Our Products
+              </div>
               <Products />
             </div>
           </div>
