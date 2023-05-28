@@ -38,42 +38,42 @@ export const products = [
   {
     image: "/pes.png",
     title: "HAVIT HV-G92 Gamepad",
-    price: "$120",
+    price: "₦1120",
   },
   {
     image: "/keyboard.png",
     title: "AK-900 Wired Keyboard",
-    price: "$960",
+    price: "₦9600",
   },
   {
     image: "/TV.png",
     title: "IPS LCD Gaming Monitor",
-    price: "$370",
+    price: "₦3700",
   },
   {
     image: "/chair.png",
     title: "S-Series Comfort Chair ",
-    price: "$375",
+    price: "₦3755",
   },
   {
     image: "/pes.png",
     title: "HAVIT HV-G92 Gamepad",
-    price: "$120",
+    price: "₦1200",
   },
   {
     image: "/keyboard.png",
     title: "AK-900 Wired Keyboard",
-    price: "$960",
+    price: "₦9600",
   },
   {
     image: "/TV.png",
     title: "IPS LCD Gaming Monitor",
-    price: "$370",
+    price: "₦3700",
   },
   {
     image: "/chair.png",
     title: "S-Series Comfort Chair ",
-    price: "$375",
+    price: "₦3750",
   },
 ];
 
@@ -108,21 +108,21 @@ export const sellings = [
   {
     img: "/red-jacket.png",
     title: "The north coat",
-    price: "$260",
+    price: "₦2,600",
   },
   {
     img: "/bag.png",
     title: "Gucci duffle bag",
-    price: "$960",
+    price: "₦96,000",
   },
   {
     img: "/player.png",
     title: "RGB liquid CPU Cooler",
-    price: "$160",
+    price: "₦1,600",
   },
   {
     img: "/desk.png",
     title: "Small BookSelf",
-    price: "$360",
+    price: "₦3,600",
   },
 ];
