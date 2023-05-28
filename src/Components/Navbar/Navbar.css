@@ -5,10 +5,10 @@
     @apply underline;
 }
 .shoppia{
-    @apply mr-[14.5rem] font-bold text-2xl;
+    @apply mr-[6rem] font-bold text-2xl;
 }
 .nav-items{
-    @apply flex gap-8 mr-[13.12rem];
+    @apply flex gap-8 mr-[4rem];
 }
 .search{
     @apply flex items-center gap-[2.3rem] bg-[#F5F5F5] pt-[0.62rem] pb-[0.62rem] pl-[1.25rem] pr-[0.75rem] rounded-[5px];

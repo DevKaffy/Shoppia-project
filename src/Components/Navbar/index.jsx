@@ -11,6 +11,13 @@ const Navbar = () => {
         <Link to="/contact">Contact</Link>
         <Link to="/about">About</Link>
         <Link to="/signup">Sign Up</Link>
+        <select className='p-[10px] border-none outline-none rounded-[5px]' name="campus" id="campus">
+          <option>Choose your institution</option>
+          <option>University of Ilorin</option>
+          <option>University of Ibadan</option>
+          <option>University of Lagos</option>
+          <option>Obafemi Awolowo University</option>
+        </select>
       </div>
       <div className="search">
         <input type="text" placeholder="What are you looking for?" />
