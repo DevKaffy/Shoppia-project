@@ -1,4 +1,6 @@
 import React from "react";
+import BestSelling from "../../BestSelling/BestSelling";
+import BestSellingItems from "../../BestSelling/BestSellingItems";
 import Category from "../../Category/Category";
 import Layout from "../../Layout";
 import Products from "../../Products/Products";
@@ -54,8 +56,8 @@ const Home = () => {
                 View All
               </button>
             </div>
+          <BestSellingItems />
           </div>
-          <Category />
         </div>
       </main>
     </Layout>

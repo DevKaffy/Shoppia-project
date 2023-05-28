@@ -104,3 +104,25 @@ export const categories = [
   },
 ];
 
+export const sellings = [
+  {
+    img: "/red-jacket.png",
+    title: "The north coat",
+    price: "$260",
+  },
+  {
+    img: "/bag.png",
+    title: "Gucci duffle bag",
+    price: "$960",
+  },
+  {
+    img: "/player.png",
+    title: "RGB liquid CPU Cooler",
+    price: "$160",
+  },
+  {
+    img: "/desk.png",
+    title: "Small BookSelf",
+    price: "$360",
+  },
+];
