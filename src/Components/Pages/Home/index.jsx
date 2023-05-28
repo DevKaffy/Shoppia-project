@@ -48,7 +48,7 @@ const Home = () => {
               <img src="/Rectangle 18.png" alt="" />
               <div className="text-[#DB4444] font-semibold">This month</div>
             </div>
-            <div className="flex items-center justify-between ">
+            <div className="flex items-center justify-between mb-[3.75rem]">
               <div className="text-[2.25rem] font-semibold">
                 Best Selling Products
               </div>
@@ -56,7 +56,7 @@ const Home = () => {
                 View All
               </button>
             </div>
-          <BestSellingItems />
+            <BestSellingItems />
           </div>
         </div>
       </main>
