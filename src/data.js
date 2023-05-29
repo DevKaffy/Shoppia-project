@@ -75,6 +75,26 @@ export const products = [
     title: "S-Series Comfort Chair ",
     price: "₦3750",
   },
+  {
+    image: "/red-jacket.png",
+    title: "The north coat",
+    price: "₦2,600",
+  },
+  {
+    image: "/bag.png",
+    title: "Gucci duffle bag",
+    price: "₦96,000",
+  },
+  {
+    image: "/player.png",
+    title: "RGB liquid CPU Cooler",
+    price: "₦1,600",
+  },
+  {
+    image: "/desk.png",
+    title: "Small BookSelf",
+    price: "₦3,600",
+  },
 ];
 
 export const categories = [
@@ -104,25 +124,3 @@ export const categories = [
   },
 ];
 
-export const sellings = [
-  {
-    img: "/red-jacket.png",
-    title: "The north coat",
-    price: "₦2,600",
-  },
-  {
-    img: "/bag.png",
-    title: "Gucci duffle bag",
-    price: "₦96,000",
-  },
-  {
-    img: "/player.png",
-    title: "RGB liquid CPU Cooler",
-    price: "₦1,600",
-  },
-  {
-    img: "/desk.png",
-    title: "Small BookSelf",
-    price: "₦3,600",
-  },
-];

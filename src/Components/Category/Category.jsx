@@ -10,7 +10,7 @@ const Category = () => {
             categories.map((category, index)=>(
                 <div className='categ-container'>
                     <CategoryItems 
-                    key={`categories - ${index} `}
+                    key={`categories - ${index}`}
                     icon={category.icon}
                     title={category.title}
                     />

@@ -1,6 +1,4 @@
 import React from "react";
-import BestSelling from "../../BestSelling/BestSelling";
-import BestSellingItems from "../../BestSelling/BestSellingItems";
 import Category from "../../Category/Category";
 import Layout from "../../Layout";
 import Products from "../../Products/Products";
@@ -13,7 +11,7 @@ const Home = () => {
       <main className="home">
         <div className="top-items">
           <Sidebar />
-          <img className="pl-[2.8rem] mb-4" src="/Frame 560.png" alt="" />
+          <img className="pl-[2.8rem] mb-4 w-full" src="/image.jpeg" alt="" />
         </div>
         <div className="main-container">
           <div>
@@ -38,22 +36,6 @@ const Home = () => {
               Browse By Category
             </div>
             <Category />
-          </div>
-
-          <div className="categories">
-            <div className="flex gap-4 items-center mb-[1rem]">
-              <img src="/Rectangle 18.png" alt="" />
-              <div className="text-[#DB4444] font-semibold">This month</div>
-            </div>
-            <div className="flex items-center justify-between mb-[3.75rem]">
-              <div className="text-[2.25rem] font-semibold">
-                Best Selling Products
-              </div>
-              <button className="bg-[#DB4444] pt-4 pb-4 pr-12 pl-12 rounded-[4px] text-white">
-                View All
-              </button>
-            </div>
-            <BestSellingItems />
           </div>
         </div>
       </main>
