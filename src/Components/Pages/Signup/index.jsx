@@ -8,7 +8,7 @@ const SignUp = () => {
     <Layout>
       <main className="signup">
         <div className="signup-img">
-          <img src="/Side Image.png" alt="" />
+          <img src="/accessories.jpeg" alt="" />
         </div>
         <div className="right-container">
           <h2>Create an account</h2>

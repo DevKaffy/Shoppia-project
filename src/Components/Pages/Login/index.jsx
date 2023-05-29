@@ -5,7 +5,7 @@ const Login = () => {
   return (
     <Layout>
       <main className="signup">
-        <img className="signup-img" src="/public/Side Image.png" alt="" />
+        <img className="signup-img" src="/accessories.jpeg" alt="" />
         <div className="right-container">
           <h2>Log in to Shoppia</h2>
           <p className="detail">Enter your details below</p>
