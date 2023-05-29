@@ -7,6 +7,7 @@ const About = () => {
     <Layout>
       <main className="about-container">
         <div className="left-container">
+          <div>
           <div className="text-[3.3rem] font-semibold mb-[1rem]">Our Story</div>
           <div className='mb-[1rem]'>
             Launced in 2015, Exclusive is South Asia’s premier online shopping
@@ -20,9 +21,11 @@ const About = () => {
             very fast. Exclusive offers a diverse assotment in categories
             ranging from consumer.
           </div>
-        </div>
-        <div>
+          </div>
           <img src="/rightpic.png" alt="" />
+        </div>
+        `
+        <div>
         </div>
       </main>
     </Layout>
