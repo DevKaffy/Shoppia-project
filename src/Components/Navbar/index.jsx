@@ -11,7 +11,11 @@ const Navbar = () => {
         <Link to="/contact">Contact</Link>
         <Link to="/about">About</Link>
         <Link to="/signup">Sign Up</Link>
-        <select className='p-[10px] border-none outline-none rounded-[5px]' name="campus" id="campus">
+        <select
+          className="p-[10px] border-none outline-none rounded-[5px]"
+          name="campus"
+          id="campus"
+        >
           <option>Choose your institution</option>
           <option>University of Ilorin</option>
           <option>University of Ibadan</option>
@@ -23,7 +27,7 @@ const Navbar = () => {
         <input type="text" placeholder="What are you looking for?" />
         <img src="/Search.svg" alt="" />
       </div>
-      <div className='flex items-center gap-4 pl-[1.8rem]'>
+      <div className="flex items-center gap-4 pl-[1.8rem]">
         <img src="/Wishlist.svg" alt="" />
         <img src="/Cart1.svg" alt="" />
       </div>
