@@ -99,19 +99,32 @@ class ProductEntryForm extends Component {
       />
 
 </div>
-<div class='form-item-div'>
-    <label htmlFor="campus">Campus: </label>
-    <br />
-      <input
-        type="text"
-        id="campus"
-        value={this.state.campus}
-        onChange={this.handleCampusChange}
-        required
-        style={{ width: '350px'}}
-      />
 
+
+<div className='form-item-div'>
+  <label htmlFor="campus">Campus: </label>
+  <br />
+  <select
+    id="campus"
+    value={this.state.campus}
+    onChange={this.handleCampusChange}
+    required
+    style={{ width: '350px' }}
+  >
+    <option value="">Select a campus</option>
+    <option value="University of Lagos (UNILAG) - Lagos">University of Lagos (UNILAG) - Lagos</option>
+    <option value="University of Ibadan (UI) - Ibadan">University of Ibadan (UI) - Ibadan</option>
+    <option value="Ahmadu Bello University (ABU) - Zaria">Ahmadu Bello University (ABU) - Zaria</option>
+    <option value="Obafemi Awolowo University (OAU) - Ile-Ife">Obafemi Awolowo University (OAU) - Ile-Ife</option>
+    <option value="University of Nigeria, Nsukka (UNN) - Nsukka">University of Nigeria, Nsukka (UNN) - Nsukka</option>
+    <option value="University of Ilorin (UNILORIN) - Ilorin">University of Ilorin (UNILORIN) - Ilorin</option>
+    <option value="Covenant University - Ota">Covenant University - Ota</option>
+    <option value="Lagos State University (LASU) - Lagos">Lagos State University (LASU) - Lagos</option>
+    <option value="Federal University of Technology, Akure (FUTA) - Akure">Federal University of Technology, Akure (FUTA) - Akure</option>
+    <option value="University of Benin (UNIBEN) - Benin City">University of Benin (UNIBEN) - Benin City</option>
+  </select>
 </div>
+
 
 <div class='form-item-div'>
     <label htmlFor="productQuantity">Quantity Available: </label>
