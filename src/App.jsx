@@ -7,6 +7,7 @@ import Home from './Components/Pages/Home';
 import Login from './Components/Pages/Login';
 import Notfound from './Components/Pages/Notfound';
 import SignUp from './Components/Pages/Signup';
+import CheckOutPage from './Components/CheckOut/CheckOutPage';
 
 
 
@@ -32,6 +33,11 @@ const App = () => {
      path: "/login",
      element: <Login />,
    },
+  {
+    path: '/checkoutpage',
+    element: <CheckOutPage />,
+  
+  },
  
   
    {
