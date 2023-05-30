@@ -9,7 +9,6 @@ import Notfound from './Components/Pages/Notfound';
 import SignUp from './Components/Pages/Signup';
 import CheckOutPage from './Components/CheckOut/CheckOutPage'
 import ProductUpload from './Components/ProductUpload/UploadPage';
-import Test from './Components/Pages/UploadProduct/Test'
 
 
 const App = () => {
@@ -44,11 +43,6 @@ const App = () => {
     path: '/productupload',
     component: <ProductUpload />,
     element: <ProductUpload />,
-  },
-
-  {
-    path: "/test",
-    element: <Test/>,
   },
   
    {
