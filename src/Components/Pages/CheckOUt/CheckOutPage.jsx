@@ -2,6 +2,7 @@ import '../Account/myStyles.css';
 import React, { Component } from 'react'
 import OrderList from './OrderList';
 import AccountSideBar from '../Account/AccountSideBar';
+import Navbar from '../../Navbar';
 
 class CheckOutPage extends Component {
     constructor(props) {
@@ -41,6 +42,9 @@ class CheckOutPage extends Component {
 
 
     return (
+
+      <div>
+        <Navbar />
 
       <div className='custom-navbar'>
         <div className='custom-navbar-left'>
@@ -83,6 +87,7 @@ class CheckOutPage extends Component {
       <div class='rightdiv'>
           
         </div>
+      </div>
       </div>
       </div>
 
