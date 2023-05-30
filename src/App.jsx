@@ -39,6 +39,7 @@ const App = () => {
   {
     path: "/ProductUpload",
     element: <ProductUpload />,
+   component: <ProductUpload />,
   },
  
  ]);
