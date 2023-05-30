@@ -40,10 +40,7 @@ const App = () => {
     path: "/ProductUpload",
     element: <ProductUpload />,
   },
-   {
-     path: "*",
-     element: <Notfound />,
-   },
+ 
  ]);
 
   return <RouterProvider router = {router} />
