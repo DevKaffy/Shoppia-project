@@ -5,7 +5,9 @@ import '../Account/myStyles.css';
 import AccountSideBar from '../Account//AccountSideBar';
 import UploadPopup from './UploadPopup';
 import ProductInShop from './ProductInShop';
-import Popup from './ProductEntryPopUp'
+import Popup from './ProductEntryPopUp';
+import Navbar from '../../Navbar'
+
 
 
 class ProductUpload extends Component {
@@ -22,19 +24,24 @@ class ProductUpload extends Component {
     const { products } = this.state; // Access the products array from the state
 
     return (
+      <div>
+        <Navbar />
       <div className="custom-navbar">
+       
         <div className="custom-navbar-left">
           <AccountSideBar />
         </div>
         <div className="products">
-          <h1 className="centered-h1">My shop</h1>
+          
 
           <div className="mainshop-div">
             <img src="https://graphicriver.img.customer.envatousercontent.com/files/256521320/bookmockup_preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=8dbf168b145bbec1aa5f0c7e60d9748b" alt="Shop banner" className="shop-banner" />
 
             <div className="products-list" style={{ display: 'grid', gridTemplateRows: 'auto 90%' }}>
               <div>
-                <h1 style={{ fontSize: '20px', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif' }}> Products</h1>
+                <h1 style={{ fontSize: '20px', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif',
+              paddingLeft: '20px',
+              paddingTop:'20px'  }}> Products</h1>
               </div>
               <div className="product-mini-div">
                 {products.map((productId, index) => (
@@ -49,6 +56,7 @@ class ProductUpload extends Component {
             </div>
           </div>
         </div>
+      </div>
       </div>
     );
   }
