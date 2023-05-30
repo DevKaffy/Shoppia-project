@@ -8,6 +8,7 @@ import Login from './Components/Pages/Login';
 import Notfound from './Components/Pages/Notfound';
 import SignUp from './Components/Pages/Signup';
 import CheckOutPage from './Components/CheckOut/CheckOutPage';
+import ProductUpload from './Components/ProductUpload/UploadPage';
 
 
 
@@ -37,6 +38,10 @@ const App = () => {
     path: '/checkoutpage',
     element: <CheckOutPage />,
   
+  },
+    {
+    path: '/productupload',
+    element: <ProductUpload />,
   },
  
   
