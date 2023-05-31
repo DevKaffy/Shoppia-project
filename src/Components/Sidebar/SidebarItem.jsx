@@ -3,15 +3,17 @@ import { useState } from 'react';
 
 
 const SidebarItem = () => {
-  const [open, setOpen] = useState(true)
+ 
   return (
-    <div className={open ? "sidebar-item open" : "sidebar-item"}>
-        <div className="side-flex">
-          <span>Women's fashion</span>
-          <img className="toggle-btn open" src="/arrow.svg" alt="" />
-        </div>
-        <div className='sidebar-content'>hello</div>
+    <div className='sidebar-item'>
+      <div className='sidebar-title'>
+        <span>Women's Fashion</span>
+        <img className='toggle-btn' src="/arrow.svg" alt="" />
       </div>
+      <div className='sidebar-content'>
+        <div>hello</div>
+      </div>
+    </div>
   );
 }
 

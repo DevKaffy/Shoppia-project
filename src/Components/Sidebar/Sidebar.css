@@ -4,26 +4,18 @@
 .sidebar-item{
     padding: 1rem;
     display: block;
-    transition: background-color .15s;
 }
 .sidebar-item:hover{
-    background-color: rgba(233, 42, 42, 0.1);
+    background-color: brown;
 }
-.side-flex{
-    @apply flex items-center justify-between pt-[.7rem] pb-[.7rem]  pl-[1rem] pr-[1rem];
+.sidebar-title{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
 }
-.side-flex .toggle-btn{
-    cursor: pointer; 
-    transition: transform .3s;
+.sidebar-title .toggle-btn{
+    cursor: pointer;
 }
-.sidebar-item .open .side-flex .toggle-btn{
-transform: rotate(180deg);
-}
-.sidebar-content{
-    padding-top: .25rem;
-    height: 0;
-    overflow: hidden;
-}
-.sidebar-item .open .sidebar-content{
-    height: auto;
-}
+/* .sidebar-content{
+
+} */

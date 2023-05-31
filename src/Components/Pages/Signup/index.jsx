@@ -1,9 +1,12 @@
 import React from 'react'
 import Layout from '../../Layout';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 import './SignUp.css'
 
 const SignUp = () => {
+  const url = "";
+  const [signUp, setSignUp] = useState("")
   return (
     <Layout>
       <main className="signup">

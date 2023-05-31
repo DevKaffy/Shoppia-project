@@ -5,7 +5,7 @@ import CategoryItems from './CategoryItems'
 
 const Category = () => {
   return (
-    <div className='flex items-center flex-wrap gap-[2rem]'>
+    <div className='flex items-center flex-wrap gap-[3rem]'>
         {
             categories.map((category, index)=>(
                 <div className='categ-container'>
