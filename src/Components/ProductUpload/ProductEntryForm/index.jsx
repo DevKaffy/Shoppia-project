@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import UploadPopup from '../UploadPopup';
+import UploadPopup from '../UploadPopUp';
 
 class ProductEntryForm extends Component {
 
