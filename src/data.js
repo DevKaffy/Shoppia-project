@@ -162,5 +162,17 @@ export const categories = [
     icon: "/gamepad.svg",
     title: "Gaming",
   },
+  {
+    icon: "/cake.svg",
+    title: "Baking",
+  },
+  {
+    icon: "/shirtline.svg",
+    title: "Wears",
+  },
+  {
+    icon: "/handbag.svg",
+    title: "Bags",
+  },
 ];
 

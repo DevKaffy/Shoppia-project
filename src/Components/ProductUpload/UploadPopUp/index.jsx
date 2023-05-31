@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import ImageUpload from '../ImageUpload';
 
 
-function Popup() {
+function UploadPopup() {
   const [showPopup, setShowPopup] = useState(false);
 
   const openPopup = () => {
@@ -32,4 +32,4 @@ function Popup() {
   );
 }
 
-export default Popup;
+export default UploadPopup;
