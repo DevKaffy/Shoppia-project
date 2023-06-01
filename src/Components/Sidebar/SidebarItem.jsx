@@ -1,20 +1,31 @@
 import React from 'react'
 import { useState } from 'react';
+import { items } from '../../data';
 
 
-const SidebarItem = () => {
- 
-  return (
-    <div className='sidebar-item'>
+const SidebarItem = ({title, icon}) => {
+ const [open, setOpen] = useState(false)
+ if(items.childrens){
+    return (
+      <div className={open ? "sidebar-item open": "sidebar-item"}>
+        <div className='sidebar-title'>
+          <span>{title}</span>
+          <img className='toggle-btn' onClick={() => setOpen(!open)} src={icon} alt="" />
+        </div>
+        <div className='sidebar-content'>
+          <div>hello</div>
+        </div>
+      </div>
+    );
+ }else{
+  return(
+    <a href={items.path || "#"} className="sidebar-item">
       <div className='sidebar-title'>
-        <span>Women's Fashion</span>
-        <img className='toggle-btn' src="/arrow.svg" alt="" />
+        <span>{title}</span>
       </div>
-      <div className='sidebar-content'>
-        <div>hello</div>
-      </div>
-    </div>
-  );
+    </a>
+  )
+ }
 }
 
 export default SidebarItem

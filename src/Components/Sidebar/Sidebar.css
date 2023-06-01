@@ -4,6 +4,7 @@
 .sidebar-item{
     padding: 1rem;
     display: block;
+    transition:background-color .15s;
 }
 .sidebar-item:hover{
     background-color: brown;
@@ -13,9 +14,18 @@
     display: flex;
     justify-content: space-between;
 }
-.sidebar-title .toggle-btn{
+.sidebar-item.open .sidebar-title .toggle-btn{
     cursor: pointer;
+    transition: transform .3s;
 }
-/* .sidebar-content{
-
-} */
+.sidebar-title .toggle-btn{
+   transform: rotate(180deg);
+}
+.sidebar-content{
+padding-top: .25em;
+height: 0;
+overflow: hidden;
+}
+.sidebar-item.open .sidebar-content{
+    height: auto;
+}
