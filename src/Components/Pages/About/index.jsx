@@ -36,7 +36,9 @@ const About = () => {
             </div>
             <div>Frontend Developer</div>
             <div className="flex items-center gap-[1rem] mt-[1rem]">
-              <img src="/Icon-Twitter.svg" alt="" />
+              <a href="https://twitter.com/adewumi_kafilat">
+                <img src="/Icon-Twitter.svg" alt="" />
+              </a>
               <img src="/icon-instagram.svg" alt="" />
               <img src="/Icon-Linkedin.svg" alt="" />
             </div>
