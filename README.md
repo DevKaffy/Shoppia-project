@@ -1,5 +1,5 @@
 # Shoppia
-A developement of Shoppia website using html, css, React, Tailwindcss and Node.js
+A development of Shoppia website using html, css, React, Tailwindcss and Node.js
 
 ## Prequisite
 - Your browser version should be up to date for better experience
@@ -22,9 +22,9 @@ A developement of Shoppia website using html, css, React, Tailwindcss and Node.j
 
 
 ## Developers
-Adewumi Kafilat Eniola
-Mathew Ndubuisi
-Tracy
+- Adewumi Kafilat Eniola
+- Mathew Ndubuisi
+- Tracy
 
 
 ## Addtional Info
