@@ -47,10 +47,7 @@ class CheckOutPage extends Component {
         <Navbar />
 
       <div className='custom-navbar'>
-        <div className='custom-navbar-left'>
-        <AccountSideBar />
-
-        </div>
+        
       
       <div className='back'>
         <div className='cart-header'>
@@ -77,11 +74,26 @@ class CheckOutPage extends Component {
         </form>
         </div>
 
-        <button type='submit'
-        className='proceed'
-        onClick={this.submitHandler}> Proceed to Checkout</button>
+            <button
+              className='proceed'
+              onClick={this.submitHandler}
+              style={{
+                backgroundColor: '#ec644b',
+                color: '#fff',
+                
+               
+              }}
+            >
+              Place Order
+            </button>
 
-        <a href="#" className="buttonLink">Continue Shopping</a>
+
+        <a href="#" className="buttonLink"
+        style={{
+          backgroundColor: '#ec644b',
+          color: '#fff',
+          cursor: 'pointer',
+         }}>Continue Shopping</a>
 
       </div>
       <div class='rightdiv'>
