@@ -8,7 +8,7 @@ function ProductInShop() {
         alt="Product"
          className='imenlarge' />
         <h3 style={{ fontSize: '14px' , textAlign: 'center' , maxWidth: '100px', maxHeight: '100px' }}>CENTELLA AMPOULE</h3>
-        <p>500$</p>
+        <p>500₦</p>
     </div>
   )
 }
