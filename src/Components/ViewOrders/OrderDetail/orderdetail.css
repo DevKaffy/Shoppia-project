@@ -1,0 +1,63 @@
+.orderdiv{
+    
+    background: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(207, 207, 207);
+    margin-top: 15px;
+    display: grid ;
+   
+   
+    grid-template-rows: [up] 20% [body]55% [down] 25%;
+}
+
+.orderdiv:hover{
+    transform: scale(1.1);
+}
+
+.bi.bi-envelope-fill, .bi-question-square-fill, .bi-calendar4-week {
+    color: #ec644b ;
+    font-size: 28px;
+  }
+
+
+.orderfooter{
+    background: rgba(211, 211, 211, 0.281);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(207, 207, 207);
+    padding: 10px;
+    grid-row: down; 
+
+    display: grid;
+    
+    grid-template-columns: [pic] 30% [namef] 70%;
+   
+
+}
+
+.orderheader{
+    
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(207, 207, 207);
+    padding: 10px;
+    grid-row: up; 
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.orderbody{
+    
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(207, 207, 207);
+    padding: 10px;
+    grid-row: body; 
+    display: grid;
+    grid-template-rows: [row1] 33% [row2]33% [row3] 33%;
+    grid-template-columns: [icon-s] 20% [desc] 80%;
+
+
+}
+
+  
+  
