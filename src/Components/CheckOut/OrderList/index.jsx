@@ -33,6 +33,14 @@ function OrderList() {
 
 
 const tablebody=orders.map(item => <OrderItem key={orders.ItemID} item={item}/>)
+
+// Calculate the total
+const total = orders.reduce(
+  (sum, item) => sum + item.price * item.quantity,
+  0
+);
+
+
   return (
     <div className='centre-table'>
 
@@ -53,6 +61,14 @@ const tablebody=orders.map(item => <OrderItem key={orders.ItemID} item={item}/>)
       <tbody>
         {tablebody}
       </ tbody>
+
+      <tfoot>
+          <tr>
+            <td colSpan="3"></td>
+            <td>Total:</td>
+            <td>₦{total}</td>
+          </tr>
+        </tfoot>
 
       </table>
     
