@@ -282,7 +282,7 @@
 
   .icon-style, .icon-style1 {
     font-size: 24px; /* Adjust the size as needed */
-    color: green; /* Change the color to your desired color */
+    color: #ec644b; /* Change the color to your soft red*/
     
   }
 
@@ -317,8 +317,9 @@
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    border-color: #4CAF50;
-    border: 1px solid #4CAF50;;
+    border-color: #ec644b;
+    border: 1px solid #ec644b;
+    height: 27px;
     
     
   }
@@ -350,6 +351,7 @@
     background: white;
     border-radius: 0px;
     padding-left : 5px;
+    width: 1300px;
     display: grid;
     grid-template-columns: [leftshop] 40% [rightshop] 60%;
     /*grid-template-rows: [topupload] 80% [middleuploadvert] auto [bottomupload] auto ;*/
@@ -429,6 +431,7 @@
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
+   
 
 
 }
