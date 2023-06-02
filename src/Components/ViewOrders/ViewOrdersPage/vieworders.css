@@ -1,0 +1,180 @@
+.products {
+   
+    display: grid;
+    grid-template-rows: [title] 20% [orderbody] auto; /* Explicitly name the rows */
+    grid-template-columns: [read] 32%[unread] 32% [in-progress] 32%; /* Explicitly name the columns */
+    gap: 15px; /* Optional gap between columns and rows */
+    padding: 5px;
+  }
+
+.title {
+    
+    grid-row: title;
+    grid-column: 1 / -1; 
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    display: grid;
+    grid-template-rows: [top] 40% [bottom] auto; /* Explicitly name the rows */
+    grid-template-columns: [left] 60%[right] auto;
+    position: relative;
+  
+
+  }
+
+.ordertitle{
+    padding-top: 20px;
+    grid-row: top; 
+    grid-column: left; 
+
+}
+
+.orderbottom{
+    
+    grid-row: bottom; 
+    grid-column: left;
+
+    display: grid;
+    grid-template-columns: [east] 30% [west] auto;
+    grid-template-rows: [up]65% [down]auto;
+
+
+}
+
+.all{
+   
+    grid-row: up; 
+    grid-column: east;
+    padding-left: 5px;
+    padding-top: 20px;
+
+}
+
+.recent{
+    
+    grid-row: up; 
+    grid-column: west;
+    padding-left: 5px;
+    padding-top: 20px;
+
+}
+
+.titlesearch-bar{
+   
+    grid-row: bottom; 
+    grid-column: right;
+
+}
+
+
+
+  .read {
+    
+    grid-column: read; /* Place the element in the "read" column */
+    grid-row: orderbody;
+    padding: 15px;
+  }
+  
+  .unread {
+    
+    grid-column: unread; /* Place the element in the "unread" column */
+    grid-row: orderbody;
+    padding: 15px;
+  }
+  
+  .in-progress {
+    
+    grid-column: in-progress; /* Place the element in the "in-progress" column */
+    grid-row: orderbody;
+    padding: 15px;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+   
+    padding: 5px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-weight: 300;
+}
+
+.heading {
+    font-size: 30px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI";
+    font-weight: 500;
+  }
+
+
+  .slider-button {
+    width: 40px;
+    height: 10px;
+    padding: 5px 0; /* Adjust the padding value to control the overall vertical size */
+    border: 1px solid #999;
+    border-radius: 10px;
+    background: #ddd;
+    right: 0;
+  }
+  
+  
+  .slider-button:hover {
+    cursor: pointer;
+    background-color: #007bff;
+  }
+  
+  .slider-button:active {
+    background-color: #007bff;
+  }
+
+  .slider1{
+   
+    grid-row: down; 
+    grid-column: east;
+    padding-left: 5px;
+
+}
+.slider1{
+   
+    grid-row: down; 
+    grid-column: west;
+    padding-left: 5px;
+
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    right: 10px;
+    height: 1px;
+    background-color: lightgray;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+
+.header3 {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: x-large;
+    padding-left: 10px;
+  
+}
+
+  
+  
+  
+  
+  
+  
+  
+  
