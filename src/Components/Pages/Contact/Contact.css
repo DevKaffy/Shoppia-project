@@ -1,5 +1,5 @@
 .contact{
-    @apply grid grid-cols-[1fr_3fr] gap-8 pt-[3.75rem] pl-[8rem] pr-[8rem];
+    @apply grid grid-cols-[15rem_1fr] gap-8 pt-[3.75rem] pl-[8rem] pr-[8rem];
 }
 .input-container{
     @apply border flex items-center gap-8 pt-[2.5rem] pl-4 pr-4;
