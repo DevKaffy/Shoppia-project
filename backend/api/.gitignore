@@ -1,4 +1,0 @@
-.env
-.prettierrc
-*.dist
-node_modules/
