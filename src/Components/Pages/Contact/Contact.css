@@ -1,0 +1,9 @@
+.contact{
+    @apply grid grid-cols-[1fr_3fr] gap-8 pt-[3.75rem] pl-[5rem] pr-[5rem];
+}
+.input-container{
+    @apply flex items-center justify-between;
+}
+.input-container input{
+    @apply pt-[0.81rem] pb-[0.81rem] pl-4 bg-[#F5F5F5];
+}
