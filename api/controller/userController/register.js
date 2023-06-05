@@ -7,15 +7,18 @@ const User = require('../../models/users');
 const bcrypt = require('bcrypt');
 const { body, validationResult } = require('express-validator');
 const nodemailer = require('nodemailer');
-// const jwt = require('jsonwebtoken');
+require('dotenv').config({ path: '../../.env' });
 
 /*const sendVerificationEmail = async (email, verificationLink) => {
     try {
+        const shopEmail = process.env.EMAIL;
+        const pass = process.env.PASS;
+        
         const mailTransporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'shoppiaonline8@gmail.com',
-            pass: 'cychheendvijetzy'
+            user: shopEmail,
+            pass: pass,
         }
         });
 
@@ -41,7 +44,7 @@ const registerUser = async (req, res) => {
     const { email, password, phonenumber, firstname, lastname, username } =
       req.body;
 
-    const phoneNumberRegex = /^\d{11}$/;
+    const phoneNumberRegex = /^(\+234[0-9]{10})|(234[0-9]{10})|(0[7-9][01][0-9]{8})$/;
 
     if (!phoneNumberRegex.test(phonenumber)) {
       return res.status(400).json({ error: `Invalid phone number` });
