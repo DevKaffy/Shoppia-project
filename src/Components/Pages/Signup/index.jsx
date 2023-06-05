@@ -5,12 +5,26 @@ import axios from 'axios';
 import './SignUp.css'
 
 const SignUp = () => {
+  // axios
+  //   .post("https://api.example.com/endpoint", {
+  //     name: "John Doe",
+  //     email: "john@example.com",
+  //     password: "password123",
+  //   })
+  //   .then((response) => {
+  //     // Handle the API response
+  //     console.log(response.data);
+  //   })
+  //   .catch((error) => {
+  //     // Handle any error that occurs
+  //     console.error(error);
+  //   });
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    userName: '',
+    firstname: '',
+    lastname: '',
+    username: '',
     email: '',
-    phoneNumber: '',
+    phonenumber: '',
     password: '',
   });
   const handleInputChange = (event) => {
@@ -19,12 +33,12 @@ const SignUp = () => {
   }
   const handleSubmit = (event) => {
     event.preventDefault();
-
+  console.log(formData)
     // API request
     axios.post('https://shoppia-production.up.railway.app/api/v1/register', formData)
     .then(response => {
       // Handle the response
-      console.log(response.register);
+      console.log(response.data);
     })
     .catch(error => {
       // Handle any errors
@@ -40,29 +54,29 @@ const SignUp = () => {
         <div className="right-container">
           <h2>Create an account</h2>
           <p className="detail">Enter your details below</p>
-          <form className="form-wrapper">
+          <form className="form-wrapper" onClick={handleSubmit}>
             <input
               type="text"
               placeholder="First name"
               required
-              name="fistName"
-              value={formData.firstName}
+              name="firstname"
+              value={formData.firstname}
               onChange={handleInputChange}
             />
             <input
               type="text"
               placeholder="Last name"
               required
-              name="lastName"
-              value={formData.lastName}
+              name="lastname"
+              value={formData.lastname}
               onChange={handleInputChange}
             />
             <input
               type="text"
               placeholder="Username"
               required
-              name="userName"
-              value={formData.userName}
+              name="username"
+              value={formData.username}
               onChange={handleInputChange}
             />
             <input
@@ -77,8 +91,8 @@ const SignUp = () => {
               type="text"
               placeholder="Phone Number"
               required
-              name="phoneNumber"
-              value={formData.phoneNumber}
+              name="phonenumber"
+              value={formData.phonenumber}
               onChange={handleInputChange}
             />
             <input
@@ -89,7 +103,7 @@ const SignUp = () => {
               value={formData.password}
               onChange={handleInputChange}
             />
-            <button className="w-full bg-[rgb(219,68,68)] pt-[1rem] pb-[1rem] rounded-[4px] text-[white] mt-[2.5rem] mb-4" onClick={handleSubmit}>
+            <button className="w-full bg-[rgb(219,68,68)] pt-[1rem] pb-[1rem] rounded-[4px] text-[white] mt-[2.5rem] mb-4">
               Create Account
             </button>
           </form>

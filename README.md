@@ -27,5 +27,5 @@ A development of Shoppia website using html, css, React, Tailwindcss and Node.js
 - Tracy
 
 
-## Addtional Info
+## Additional Info
 - Alx Project cohort_9.

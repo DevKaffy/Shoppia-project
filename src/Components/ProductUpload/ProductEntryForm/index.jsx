@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import UploadPopup from '../UploadPopup';
 
 class ProductEntryForm extends Component {
 

@@ -4,7 +4,9 @@ import Layout from '../../Layout';
 const Contact = () => {
   return (
     <Layout>
-      <main></main>
+      <main>
+        
+      </main>
     </Layout>
   );
 }
