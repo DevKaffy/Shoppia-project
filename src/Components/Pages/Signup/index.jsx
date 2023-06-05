@@ -1,49 +1,65 @@
-import React, {useState} from 'react'
-import Layout from '../../Layout';
-import { Link } from 'react-router-dom';
-import axios from 'axios';
-import './SignUp.css'
+import React, { useState } from "react";
+import Layout from "../../Layout";
+import { Link } from "react-router-dom";
+import axios from "axios";
+import "./SignUp.css";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
-  // axios
-  //   .post("https://api.example.com/endpoint", {
-  //     name: "John Doe",
-  //     email: "john@example.com",
-  //     password: "password123",
-  //   })
-  //   .then((response) => {
-  //     // Handle the API response
-  //     console.log(response.data);
-  //   })
-  //   .catch((error) => {
-  //     // Handle any error that occurs
-  //     console.error(error);
-  //   });
   const [formData, setFormData] = useState({
-    firstname: '',
-    lastname: '',
-    username: '',
-    email: '',
-    phonenumber: '',
-    password: '',
+    firstname: "",
+    lastname: "",
+    username: "",
+    email: "",
+    phonenumber: "",
+    password: "",
   });
+
+  const navigate = useNavigate();
+
+  const [errors, setErrors] = useState({}); // State to hold form errors
+
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
-  }
-  const handleSubmit = (event) => {
+    setErrors({ ...errors, [name]: "" }); // Clear the error when the input changes
+  };
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
-  console.log(formData)
-    // API request
-    axios.post('https://shoppia-production.up.railway.app/api/v1/register', formData)
-    .then(response => {
-      // Handle the response
-      console.log(response.data);
-    })
-    .catch(error => {
-      // Handle any errors
-      console.error(error);
-    });
+    //console.log(formData);
+
+    try {
+      const response = await axios.post(
+        "https://shoppia-production.up.railway.app/api/v1/register",
+        formData
+      );
+      navigate("/login");
+    } catch (error) {
+      if (error.response && error.response.data && error.response.data.Error) {
+        const responseErrors = error.response.data.Error;
+        const fieldErrors = {};
+        responseErrors.forEach((error, index) => {
+          const fieldName = error.path;
+          fieldErrors[fieldName] = error.msg;
+        });
+        setErrors({ ...errors, ...fieldErrors });
+      } else if (
+        error.response &&
+        error.response.data &&
+        error.response.data.error
+      ) {
+        // Get the generic error message from the response
+        const errorMessage = error.response.data.error;
+        setErrors({ ...errors, generic: errorMessage });
+      } else {
+        // Set a generic error
+        setErrors({
+          ...errors,
+          generic: "An error occurred while signing up. Please try again.",
+        });
+      }
+    }
   };
   return (
     <Layout>
@@ -54,7 +70,7 @@ const SignUp = () => {
         <div className="right-container">
           <h2>Create an account</h2>
           <p className="detail">Enter your details below</p>
-          <form className="form-wrapper" onClick={handleSubmit}>
+          <form className="form-wrapper" onSubmit={handleSubmit}>
             <input
               type="text"
               placeholder="First name"
@@ -63,6 +79,9 @@ const SignUp = () => {
               value={formData.firstname}
               onChange={handleInputChange}
             />
+            {errors.firstname && (
+              <span className="error">{errors.firstname}</span>
+            )}
             <input
               type="text"
               placeholder="Last name"
@@ -71,6 +90,9 @@ const SignUp = () => {
               value={formData.lastname}
               onChange={handleInputChange}
             />
+            {errors.lastname && (
+              <span className="error">{errors.lastname}</span>
+            )}
             <input
               type="text"
               placeholder="Username"
@@ -79,6 +101,9 @@ const SignUp = () => {
               value={formData.username}
               onChange={handleInputChange}
             />
+            {errors.username && (
+              <span className="error">{errors.username}</span>
+            )}
             <input
               type="text"
               placeholder="Email"
@@ -87,6 +112,7 @@ const SignUp = () => {
               value={formData.email}
               onChange={handleInputChange}
             />
+            {errors.email && <span className="error">{errors.email}</span>}
             <input
               type="text"
               placeholder="Phone Number"
@@ -95,6 +121,9 @@ const SignUp = () => {
               value={formData.phonenumber}
               onChange={handleInputChange}
             />
+            {errors.phonenumber && (
+              <span className="error">{errors.phonenumber}</span>
+            )}
             <input
               type="password"
               placeholder="Password"
@@ -103,6 +132,10 @@ const SignUp = () => {
               value={formData.password}
               onChange={handleInputChange}
             />
+            {errors.password && (
+              <span className="error">{errors.password}</span>
+            )}
+            {errors.generic && <span className="error">{errors.generic}</span>}
             <button className="w-full bg-[rgb(219,68,68)] pt-[1rem] pb-[1rem] rounded-[4px] text-[white] mt-[2.5rem] mb-4">
               Create Account
             </button>
@@ -115,6 +148,6 @@ const SignUp = () => {
       </main>
     </Layout>
   );
-}
+};
 
-export default SignUp
+export default SignUp;
