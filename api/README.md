@@ -1,1 +1,1 @@
-This repo contains backend codes for shoppia portfolio project
+This directory contains backend codes for shoppia portfolio project
