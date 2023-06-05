@@ -7,7 +7,10 @@ const Contact = () => {
     <Layout>
       <main className='contact'>
         <div>
-          <div>Come back to me</div>
+          <div className='flex items-center gap-4'>
+            <img src="/icons-phone.svg" alt="" />
+            <div>Call us</div>
+          </div>
           <div>ikrifkmdjnmcd</div>
         </div>
         <div className='input-container'>
