@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../../Layout';
+import { Link } from 'react-router-dom';
 import './About.css'
 
 const About = () => {
@@ -70,6 +71,8 @@ const About = () => {
             </div>
           </div>
         </div>
+        <Link to="/CheckOutPage">Check out</Link> <br />
+        <Link to="/ProductUpload">Product Upload</Link>
       </main>
     </Layout>
   );

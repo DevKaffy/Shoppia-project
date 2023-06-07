@@ -6,9 +6,6 @@ import React, { Component } from 'react'
 class AccountSideBar extends Component {
   render() {
     return (
-
-
-
   
         <div className="col-3 custom-sidebar"  style={{background: 'black', marginLeft: '30px', marginTop: '80px', boxShadow: '0 4px 8px rgba(5, 3, 1, 0.2)', width: '200px'}}>
           {/* Sidebar content here */}
