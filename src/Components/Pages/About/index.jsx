@@ -16,9 +16,9 @@ const About = () => {
               With a wide range of products and services tailored to campus needs, Shoppia provides a one-stop-shop for everything from textbooks and school supplies to dorm room decor and fitness gear. Our mission is to make campus life easier, more affordable, more enjoyable for students, by providing a convenient, reliable, and secure shopping experience. 
             </div>
             <div>
-              Exclusive has more than 1 Million products to offer, growing at a
-              very fast. Exclusive offers a diverse assotment in categories
-              ranging from consumer.
+              Our platform is built on a foundation of trust, with a commitment to customer service, quality products, and competitive prices. Whether you're a freshman just starting out a seasoned senior looking to finish strong, Shoppia is here to help you succeed in every aspect of campus life.
+              Shoppia has more than 1 Million products to offer, growing at a
+              very fast.
             </div>
           </div>
           <img src="/rightpic.png" alt="" />
