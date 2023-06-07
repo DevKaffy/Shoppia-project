@@ -77,8 +77,10 @@ const About = () => {
             </div>
           </div>
         </div>
+        <div className='mt-[2rem]'>
         <Link to="/CheckOutPage">Check out</Link> <br />
         <Link to="/ProductUpload">Product Upload</Link>
+        </div>
       </main>
     </Layout>
   );
