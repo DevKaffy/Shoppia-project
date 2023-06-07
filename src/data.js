@@ -1,12 +1,11 @@
 export const items = [
   {
     title: "Women's Fashion",
-    icon: "/arrow.svg",
-    path: "women's fashion"
+    icon: "/arrow-drop-down-line.svg",
   },
   {
     title: "Men's Fashion",
-    icon: "/arrow.svg",
+    icon: "/arrow-drop-down-line.svg",
   },
   {
     title: "Electronics",

@@ -9,6 +9,8 @@ import Notfound from './Components/Pages/Notfound';
 import SignUp from './Components/Pages/Signup';
 import CheckOutPage from './Components/CheckOut/CheckOutPage';
 import ProductUpload from './Components/ProductUpload/UploadPage';
+import HomeAndLifestyle from './Components/HomeAndLifestyle/HomeAndLifestyle';
+import Electronics from './Components/Electronics/Electronics';
 
 
 
@@ -34,22 +36,27 @@ const App = () => {
      path: "/login",
      element: <Login />,
    },
-  {
-    path: '/checkoutpage',
-    element: <CheckOutPage />,
-  
-  },
-    {
-    path: '/productupload',
-    element: <ProductUpload />,
-  },
- 
-  
+   {
+     path: "/checkoutpage",
+     element: <CheckOutPage />,
+   },
+   {
+     path: "/productupload",
+     element: <ProductUpload />,
+   },
+   {
+     path: "/homeandlifestyle",
+     element: <HomeAndLifestyle />,
+   },
+
+   {
+     path: "/electronics",
+     element: <Electronics/>,
+   },
    {
      path: "*",
      element: <Notfound />,
    },
- 
  ]);
 
   return <RouterProvider router = {router} />
