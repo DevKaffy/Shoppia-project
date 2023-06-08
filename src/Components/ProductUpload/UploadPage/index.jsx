@@ -3,7 +3,7 @@ import ImageUpload from '../ImageUpload';
 import '../../Account/myStyles.css';
 
 import AccountSideBar from '../../Account/AccountSideBar';
-// import UploadPopup from '../UploadPopup';
+import UploadPopup from '../UploadPopup';
 import ProductInShop from '../ProductInShop';
 import Popup from '../ProductEntryPopup';
 import Navbar from '../../Navbar'
