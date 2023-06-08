@@ -9,8 +9,13 @@ class ImageUpload extends Component {
     
       this.state = {
         fileStatus: 'not-uploaded',
-         fileName : null // file name
+         fileName : null, // file name
+         
       }
+
+      // Bind the handleFileUpload method to the component instance
+    this.handleFileUpload = this.handleFileUpload.bind(this);
+    
     }
 
     handleFileUpload = (event) => {
@@ -21,7 +26,8 @@ class ImageUpload extends Component {
       setTimeout(() => {
         // File upload completed
         this.setState({ fileStatus: 'uploaded' });
-      }, 2000);
+    this.props.onFileUpload(file); // Call the callback function with the file data
+  }, 2000);
     };
 
    
