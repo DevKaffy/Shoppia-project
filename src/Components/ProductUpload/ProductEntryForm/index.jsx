@@ -1,4 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component, useEffect, useState  } from 'react'
+import UploadPopup from '../UploadPopup';
+import axios from 'axios';
+
 
 class ProductEntryForm extends Component {
 
@@ -11,7 +14,8 @@ class ProductEntryForm extends Component {
         campus: '',
         productQuantity:'',
         productCategory: '',
-        price: ''
+        price: '',
+        file: null
       }
     }
 
@@ -36,8 +40,17 @@ class ProductEntryForm extends Component {
       };
       
       handlePriceChange= (e) => {
-        this.setState({ productChange: e.target.value });
+        this.setState({ price: e.target.value });
       };
+
+      handleFileUpload = (file) => {
+        // Handle the file data received from the child component
+        // You can set it in the parent component's state or perform any other necessary actions
+        this.setState({ file: file });
+        console.log('handleFileUpload triggered');
+        console.log(file);
+      };
+      
 
 
 
@@ -47,6 +60,41 @@ class ProductEntryForm extends Component {
         // Process the form submission
         console.log('Product Name:', this.state.productName, this.state.productDesc,  this.state.campus, this.state.productQuantity, this.state.productCategory, this.state.price);
         // Additional logic for handling form data
+
+        console.log(this.props);
+
+
+        const formData = new FormData();
+        formData.append('title', this.state.productName);
+        formData.append('description', this.state.productDesc);
+        formData.append('price', this.state.price);
+        formData.append('campus', this.state.campus);
+        formData.append('quantity', this.state.quantity);
+        formData.append('category', this.state.productCategory);
+        formData.append('image', this.state.file);
+
+
+        axios.post('https://shoppia-production.up.railway.app/api/v1/users/7/products', formData,
+        {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+            'Authorization': '<your-token>',
+          },
+        })
+      .then(response => {
+        console.log('Product data submitted successfully!', response.data);
+        // Handle success, redirect, show success message, etc.
+
+        console.log('TW Response headers:', response.headers); // Add this line to log the response headers
+        console.log('TW Response data:', response.data); 
+      })
+      .catch(error => {
+        console.error('Error submitting product data:', error);
+        // Handle error, show error message, etc.
+        console.log('t Error response headers:', error.response.headers);
+        console.log('t Error response data:', error.response.data);
+      });
+
       };
 
   render() {
@@ -56,7 +104,7 @@ class ProductEntryForm extends Component {
       <h2 className='add-prod'>Add a Product</h2>
       <div className='form-im'>
        
-        <im alt='bac'></im>
+        <img alt='bac' />
       </div>
 
          
@@ -181,11 +229,18 @@ class ProductEntryForm extends Component {
       
 <div style={{ paddingTop: '20px', height: '50px', display: 'flex', alignItems: 'center' }}>
 
-      <UploadPopup />
+      <UploadPopup onFileUpload={this.handleFileUpload}   />
       </div>
 
       <div style={{ paddingTop: '20px', height: '50px', display: 'flex', alignItems: 'center' }}>
-      <button type="submit" className='black-button'>Submit</button>
+      <button type="submit" className='black-button' style={{
+    backgroundColor: 'black',
+    color: '#fff',
+    padding: '10px 20px',
+    border: 'none',
+    borderRadius: '4px',
+    fontSize: '16px'
+  }}>Submit</button>
       </div>
       </form>
       </div>
