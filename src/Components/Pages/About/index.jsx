@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '../../Layout';
-import { Link } from 'react-router-dom';
 import './About.css'
 
 const About = () => {
@@ -13,20 +12,16 @@ const About = () => {
               Our Story
             </div>
             <div className="mb-[1rem]">
-              With a wide range of products and services tailored to campus
-              needs, Shoppia provides a one-stop-shop for everything from
-              textbooks and school supplies to dorm room decor and fitness gear.
-              Our mission is to make campus life easier, more affordable, more
-              enjoyable for students, by providing a convenient, reliable, and
-              secure shopping experience.
+              Launced in 2015, Exclusive is South Asia’s premier online shopping
+              makterplace with an active presense in Bangladesh. Supported by
+              wide range of tailored marketing, data and service solutions,
+              Exclusive has 10,500 sallers and 300 brands and serves 3 millioons
+              customers across the region.
             </div>
             <div>
-              Our platform is built on a foundation of trust, with a commitment
-              to customer service, quality products, and competitive prices.
-              Whether you're a freshman just starting out a seasoned senior
-              looking to finish strong, Shoppia is here to help you succeed in
-              every aspect of campus life. Shoppia has more than 1 Million
-              products to offer, growing at a very fast pace.
+              Exclusive has more than 1 Million products to offer, growing at a
+              very fast. Exclusive offers a diverse assotment in categories
+              ranging from consumer.
             </div>
           </div>
           <img src="/rightpic.png" alt="" />
@@ -44,13 +39,10 @@ const About = () => {
               <a href="https://twitter.com/adewumi_kafilat">
                 <img src="/Icon-Twitter.svg" alt="" />
               </a>
+              <img src="/icon-instagram.svg" alt="" />
               <a href="https://www.linkedin.com/in/adewumi-kafilat-19a391194/">
                 <img src="/Icon-Linkedin.svg" alt="" />
               </a>
-              <a href="https://github.com/DevKaffy/Shoppia-project">
-                <img src="/github-line.svg" alt="" />
-              </a>
-              <img src="/icon-instagram.svg" alt="" />
             </div>
           </div>
           <div>
@@ -92,9 +84,9 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="mt-[2rem]">
-          <Link to="/CheckOutPage">Check out</Link> <br />
-          <Link to="/ProductUpload">Product Upload</Link>
+        <div className='mt-[2rem]'>
+        <Link to="/CheckOutPage">Check out</Link> <br />
+        <Link to="/ProductUpload">Product Upload</Link>
         </div>
       </main>
     </Layout>
