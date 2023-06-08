@@ -47,6 +47,9 @@ const About = () => {
               <a href="https://www.linkedin.com/in/adewumi-kafilat-19a391194/">
                 <img src="/Icon-Linkedin.svg" alt="" />
               </a>
+              <a href="https://github.com/DevKaffy/Shoppia-project">
+                <img src="/github-line.svg" alt="" />
+              </a>
               <img src="/icon-instagram.svg" alt="" />
             </div>
           </div>
@@ -60,6 +63,9 @@ const About = () => {
               <img src="/Icon-Twitter.svg" alt="" />
               <a href="https://www.linkedin.com/in/matthew-ndubuisi-06192b254">
                 <img src="/Icon-Linkedin.svg" alt="" />
+              </a>
+              <a href="https://github.com/DevKaffy/Shoppia-project">
+                <img src="/github-line.svg" alt="" />
               </a>
               <img src="/icon-instagram.svg" alt="" />
             </div>
@@ -78,6 +84,9 @@ const About = () => {
               </a>
               <a href="https://www.linkedin.com/in/tracy-wankio-b2075675/">
                 <img src="/Icon-Linkedin.svg" alt="" />
+              </a>
+              <a href="https://github.com/DevKaffy/Shoppia-project">
+                <img src="/github-line.svg" alt="" />
               </a>
               <img src="/icon-instagram.svg" alt="" />
             </div>
