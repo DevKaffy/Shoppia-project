@@ -44,10 +44,10 @@ const About = () => {
               <a href="https://twitter.com/adewumi_kafilat">
                 <img src="/Icon-Twitter.svg" alt="" />
               </a>
-              <img src="/icon-instagram.svg" alt="" />
               <a href="https://www.linkedin.com/in/adewumi-kafilat-19a391194/">
                 <img src="/Icon-Linkedin.svg" alt="" />
               </a>
+              <img src="/icon-instagram.svg" alt="" />
             </div>
           </div>
           <div>
@@ -58,28 +58,34 @@ const About = () => {
             <div>Backend Developer</div>
             <div className="flex items-center gap-[1rem] mt-[1rem]">
               <img src="/Icon-Twitter.svg" alt="" />
+              <a href="https://www.linkedin.com/in/matthew-ndubuisi-06192b254">
+                <img src="/Icon-Linkedin.svg" alt="" />
+              </a>
               <img src="/icon-instagram.svg" alt="" />
-              <img src="/Icon-Linkedin.svg" alt="" />
             </div>
           </div>
           <div>
             <img
               className="w-[23.12rem] h-[26.8rem] mb-[3rem]"
-              src="/Mathew.png"
+              src="/tracy.jpeg"
               alt=""
             />
             <div className="text-2xl font-normal mb-2">Tracy</div>
             <div>Frontend Developer</div>
             <div className="flex items-center gap-[1rem] mt-[1rem]">
-              <img src="/Icon-Twitter.svg" alt="" />
+              <a href="https://twitter.com/TWankio">
+                <img src="/Icon-Twitter.svg" alt="" />
+              </a>
+              <a href="https://www.linkedin.com/in/tracy-wankio-b2075675/">
+                <img src="/Icon-Linkedin.svg" alt="" />
+              </a>
               <img src="/icon-instagram.svg" alt="" />
-              <img src="/Icon-Linkedin.svg" alt="" />
             </div>
           </div>
         </div>
-        <div className='mt-[2rem]'>
-        <Link to="/CheckOutPage">Check out</Link> <br />
-        <Link to="/ProductUpload">Product Upload</Link>
+        <div className="mt-[2rem]">
+          <Link to="/CheckOutPage">Check out</Link> <br />
+          <Link to="/ProductUpload">Product Upload</Link>
         </div>
       </main>
     </Layout>
