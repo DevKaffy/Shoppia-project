@@ -1,5 +1,5 @@
 import React, { Component, useEffect, useState  } from 'react'
-import UploadPopup from '../UploadPopup';
+// import UploadPopup from '../UploadPopup';
 import axios from 'axios';
 
 

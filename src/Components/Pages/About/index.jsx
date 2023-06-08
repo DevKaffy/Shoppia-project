@@ -1,6 +1,7 @@
-import React from 'react'
-import Layout from '../../Layout';
-import './About.css'
+import React from "react";
+import Layout from "../../Layout";
+import { Link } from "react-router-dom";
+import "./About.css";
 
 const About = () => {
   return (
@@ -39,10 +40,13 @@ const About = () => {
               <a href="https://twitter.com/adewumi_kafilat">
                 <img src="/Icon-Twitter.svg" alt="" />
               </a>
-              <img src="/icon-instagram.svg" alt="" />
               <a href="https://www.linkedin.com/in/adewumi-kafilat-19a391194/">
                 <img src="/Icon-Linkedin.svg" alt="" />
               </a>
+              <a href="https://github.com/DevKaffy/Shoppia-project">
+                <img className="w-6 h-6" src="/github-line.svg" alt="" />
+              </a>
+              <img src="/icon-instagram.svg" alt="" />
             </div>
           </div>
           <div>
@@ -56,8 +60,8 @@ const About = () => {
               <a href="https://www.linkedin.com/in/matthew-ndubuisi-06192b254">
                 <img src="/Icon-Linkedin.svg" alt="" />
               </a>
-              <a href="https://github.com/DevKaffy/Shoppia-project">
-                <img src="/github-line.svg" alt="" />
+              <a href="https://www.linkedin.com/in/matthew-ndubuisi-06192b254">
+                <img className="w-6 h-6" src="/github-line.svg" alt="" />
               </a>
               <img src="/icon-instagram.svg" alt="" />
             </div>
@@ -78,19 +82,19 @@ const About = () => {
                 <img src="/Icon-Linkedin.svg" alt="" />
               </a>
               <a href="https://github.com/DevKaffy/Shoppia-project">
-                <img src="/github-line.svg" alt="" />
+                <img className="w-6 h-6" src="/github-line.svg" alt="" />
               </a>
               <img src="/icon-instagram.svg" alt="" />
             </div>
           </div>
         </div>
-        <div className='mt-[2rem]'>
-        <Link to="/CheckOutPage">Check out</Link> <br />
-        <Link to="/ProductUpload">Product Upload</Link>
+        <div className="mt-[2rem]">
+          <Link to="/CheckOutPage">Check out</Link> <br />
+          <Link to="/ProductUpload">Product Upload</Link>
         </div>
       </main>
     </Layout>
   );
-}
+};
 
-export default About
+export default About;
