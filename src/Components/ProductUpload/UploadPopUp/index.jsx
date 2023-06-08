@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import ImageUpload from '../ImageUpload';
 
 
-function Popup() {
+function Popup({ onFileUpload }) {
   const [showPopup, setShowPopup] = useState(false);
 
   const openPopup = () => {
@@ -21,8 +21,8 @@ function Popup() {
         ReactDOM.createPortal(
           <div className="popup-overlay">
             <div className="popup-content">
-              <button className="close-button" onClick={closePopup}><i class="bi bi-x-lg"></i></button>
-              <ImageUpload />
+              <button className="close-button" onClick={closePopup}><i className="bi bi-x-lg"></i></button>
+              <ImageUpload onFileUpload={onFileUpload} />
             </div>
           </div>,
           document.body
@@ -33,3 +33,10 @@ function Popup() {
 }
 
 export default Popup;
+
+
+
+
+
+
+
