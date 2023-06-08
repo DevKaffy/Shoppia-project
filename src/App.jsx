@@ -9,6 +9,7 @@ import Notfound from './Components/Pages/Notfound';
 import SignUp from './Components/Pages/Signup';
 import CheckOutPage from './Components/CheckOut/CheckOutPage';
 import ProductUpload from './Components/ProductUpload/UploadPage';
+import index from './Components/ViewOrders/ViewOrdersPage';
 import HomeAndLifestyle from './Components/HomeAndLifestyle/HomeAndLifestyle';
 import Electronics from './Components/Electronics/Electronics';
 
