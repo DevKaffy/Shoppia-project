@@ -9,27 +9,33 @@ export const items = [
   },
   {
     title: "Electronics",
-    path: "/Electronics"
+    icon: "/arrow-drop-down-line.svg",
+    path: "/Electronics",
   },
   {
     title: "Home & Lifestyle",
-    path: "/Home & Lifestyle"
+    icon: "/arrow-drop-down-line.svg",
+    path: "/Home & Lifestyle",
   },
   {
     title: "Medicine",
-    path: "/Medicine"
+    icon: "/arrow-drop-down-line.svg",
+    path: "/Medicine",
   },
   {
     title: "Sports & Outdoor",
-    path: "/Sports & outdoor"
+    icon: "/arrow-drop-down-line.svg",
+    path: "/Sports & outdoor",
   },
   {
     title: "Groceries & Pets",
-    path: "/Groceries & Pets"
+    icon: "/arrow-drop-down-line.svg",
+    path: "/Groceries & Pets",
   },
   {
     title: "Health & Beauty",
-    path: "/Health & Beauty"
+    icon: "/arrow-drop-down-line.svg",
+    path: "/Health & Beauty",
   },
 ];
 

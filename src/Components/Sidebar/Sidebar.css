@@ -13,6 +13,7 @@
 .sidebar-title{
     font-size: 1.2rem;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .sidebar-item.open .sidebar-title .toggle-btn{
