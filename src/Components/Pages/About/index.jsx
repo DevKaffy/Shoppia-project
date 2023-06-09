@@ -26,7 +26,7 @@ const About = () => {
               Whether you're a freshman just starting out a seasoned senior
               looking to finish strong, Shoppia is here to help you succeed in
               every aspect of campus life. Shoppia has more than 1 Million
-              products to offer, growing at a very fast.
+              products to offer, growing at a very fast pace.
             </div>
           </div>
           <img src="/rightpic.png" alt="" />
