@@ -2,6 +2,7 @@ export const items = [
   {
     title: "Women's Fashion",
     icon: "/arrow-drop-down-line.svg",
+    path: "/WomenFashion"
   },
   {
     title: "Men's Fashion",
@@ -15,7 +16,7 @@ export const items = [
   {
     title: "Home & Lifestyle",
     icon: "/arrow-drop-down-line.svg",
-    path: "/Home & Lifestyle",
+    path: "/HomeAndLifestyle",
   },
   {
     title: "Medicine",

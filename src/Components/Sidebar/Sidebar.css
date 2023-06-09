@@ -1,5 +1,5 @@
 .sidebar{
-    @apply  h-[21.5rem] p-4 overflow-auto;
+    @apply  h-[21.5rem] px-4 overflow-auto;
 }
 .sidebar-item{
     padding: 1rem;
@@ -15,6 +15,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.toggle-btn{
+    cursor: pointer;
 }
 .sidebar-item.open .sidebar-title .toggle-btn{
     cursor: pointer;
