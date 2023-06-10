@@ -28,10 +28,13 @@ const Login = () => {
 
       if (response.ok) {
         // Successful login
-        const token = response.headers.get("authorization");
+        //const token = response.headers.get("authorization");
+        const { token, userId } = data;
         // Store the token in localStorage
         localStorage.setItem("token", token);
-        navigate("/");
+        localStorage.setItem("userId", userId);
+        //const { userId } = data;
+        navigate(`/`);
       } else {
         // Error occurred
         if (data && data.errors) {

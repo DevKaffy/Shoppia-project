@@ -5,7 +5,7 @@ const Cart = require('./models/cart');
 const Order = require('./models/order');
 const sequelize = require('./config');
 
-// Define associations and synchronize models
+
 async function synchronizeModels() {
   try {
     // Synchronize models

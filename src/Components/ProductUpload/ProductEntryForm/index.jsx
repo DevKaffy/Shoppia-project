@@ -1,5 +1,5 @@
 import React, { Component, useEffect, useState  } from 'react'
-// import UploadPopup from '../UploadPopup';
+import UploadPopup from '../UploadPopUp';
 import axios from 'axios';
 
 
@@ -9,22 +9,22 @@ class ProductEntryForm extends Component {
       super(props)
     
       this.state = {
-        productName: '',
-        productDesc: '',
+        title: '',
+        description: '',
         campus: '',
-        productQuantity:'',
-        productCategory: '',
+        quantity:'',
+        category: '',
         price: '',
-        file: null
+        image: null
       }
     }
 
     handleProductNameChange = (e) => {
-        this.setState({ productName: e.target.value });
+        this.setState({ title: e.target.value });
       };
 
     handleProductDescChange = (e) => {
-        this.setState({ productDesc: e.target.value });
+        this.setState({ description: e.target.value });
       };
 
       handleCampusChange = (e) => {
@@ -32,11 +32,11 @@ class ProductEntryForm extends Component {
       };
 
       handleProductQuantityChange = (e) => {
-        this.setState({ productQuantity: e.target.value });
+        this.setState({ quantity: e.target.value });
       };
 
       handleProductCategory = (e) => {
-        this.setState({ productCategory: e.target.value });
+        this.setState({ category: e.target.value });
       };
       
       handlePriceChange= (e) => {
@@ -46,52 +46,51 @@ class ProductEntryForm extends Component {
       handleFileUpload = (file) => {
         // Handle the file data received from the child component
         // You can set it in the parent component's state or perform any other necessary actions
-        this.setState({ file: file });
-        console.log('handleFileUpload triggered');
-        console.log(file);
+        this.setState({ image: file });
+        //console.log('handleFileUpload triggered');
+        //console.log(file);
       };
       
-
-
-
-
     handleSubmit = (e) => {
         e.preventDefault();
         // Process the form submission
-        console.log('Product Name:', this.state.productName, this.state.productDesc,  this.state.campus, this.state.productQuantity, this.state.productCategory, this.state.price);
+        //console.log('Product Name:', this.state.productName, this.state.productDesc,  this.state.campus, this.state.productQuantity, this.state.productCategory, this.state.price);
         // Additional logic for handling form data
 
-        console.log(this.props);
+        //console.log(this.props);
 
 
         const formData = new FormData();
-        formData.append('title', this.state.productName);
-        formData.append('description', this.state.productDesc);
+        formData.append('title', this.state.title);
+        formData.append('description', this.state.description);
         formData.append('price', this.state.price);
         formData.append('campus', this.state.campus);
         formData.append('quantity', this.state.quantity);
-        formData.append('category', this.state.productCategory);
-        formData.append('image', this.state.file);
+        formData.append('category', this.state.category);
+        formData.append('image', this.state.image);
 
+        const userId = localStorage.getItem('userId');
 
-        axios.post('https://shoppia-production.up.railway.app/api/v1/users/7/products', formData,
+        axios.post(`https://shoppia-production.up.railway.app/api/v1/users/${userId}/products`, formData,
         {
           headers: {
             'Content-Type': 'multipart/form-data',
-            'Authorization': '<your-token>',
+            'Authorization': localStorage.getItem('token'),
           },
         })
       .then(response => {
-        console.log('Product data submitted successfully!', response.data);
+        console.log('Product data submitted successfully!', response.data);// You will remove this line
         // Handle success, redirect, show success message, etc.
 
-        console.log('TW Response headers:', response.headers); // Add this line to log the response headers
-        console.log('TW Response data:', response.data); 
+        /* Handle redirect after a successful upload */
+
+        //console.log('TW Response headers:', response.headers); // Add this line to log the response headers
+        //console.log('TW Response data:', response.data); 
       })
       .catch(error => {
         console.error('Error submitting product data:', error);
         // Handle error, show error message, etc.
-        console.log('t Error response headers:', error.response.headers);
+        //console.log('t Error response headers:', error.response.headers);
         console.log('t Error response data:', error.response.data);
       });
 
@@ -119,7 +118,7 @@ class ProductEntryForm extends Component {
 
      
 
-      <div class='form-item-div'>
+      <div className='form-item-div'>
       <label htmlFor="productName">Product Name: </label>
       <br />
       <input
@@ -209,7 +208,7 @@ class ProductEntryForm extends Component {
         <option value="SportsEquipment">Sports Equipment</option>
         <option value="HomeDecor">Home Decor</option>
         {/* Add more options as needed */}
-      </select>
+     /* </select>
       </div>
 
 <div class='form-item-div'>
