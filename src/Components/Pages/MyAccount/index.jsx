@@ -13,7 +13,6 @@ const MyAccount = () => {
           <Link to="/">Home</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/about">About</Link>
-          <div className="cursor-pointer">Logout</div>
           <select
             className="p-[10px] border-none outline-none rounded-[5px]"
             name="campus"
@@ -33,6 +32,7 @@ const MyAccount = () => {
         <div className="flex items-center gap-4 pl-[1.8rem]">
           <img src="/Wishlist.svg" alt="" />
           <img src="/Cart1.svg" alt="" />
+          <img src="/user.svg" alt="" />
         </div>
       </div>
       <main className="home">
