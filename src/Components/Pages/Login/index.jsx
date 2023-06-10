@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Layout from "../../Layout";
 
 const Login = () => {
@@ -88,12 +88,14 @@ const Login = () => {
             )}
             {errors.general && <p style={{ color: "red" }}>{errors.general}</p>}
             <div className="flex items-center justify-between mt-[3.5rem] mb-4">
-              <button
-                className="bg-[#DB4444] pt-[1rem] pb-[1rem] pr-[3rem] pl-[3rem] rounded-[4px] text-[white]"
-                type="submit"
-              >
-                Log In
-              </button>
+              <Link to="/myaccount">
+                <button
+                  className="bg-[#DB4444] pt-[1rem] pb-[1rem] pr-[3rem] pl-[3rem] rounded-[4px] text-[white]"
+                  type="submit"
+                >
+                  Log In
+                </button>
+              </Link>
               <p className="text-[#DB4444] cursor-pointer">Forget Password?</p>
             </div>
           </form>

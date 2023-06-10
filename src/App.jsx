@@ -9,9 +9,9 @@ import Notfound from './Components/Pages/Notfound';
 import SignUp from './Components/Pages/Signup';
 import CheckOutPage from './Components/CheckOut/CheckOutPage';
 import ProductUpload from './Components/ProductUpload/UploadPage';
-import index from './Components/ViewOrders/ViewOrdersPage';
 import HomeAndLifestyle from './Components/HomeAndLifestyle/HomeAndLifestyle';
 import Electronics from './Components/Electronics/Electronics';
+import MyAccount from './Components/Pages/MyAccount';
 
 
 
@@ -46,13 +46,17 @@ const App = () => {
      element: <ProductUpload />,
    },
    {
+     path: "/myaccount",
+     element: <MyAccount />,
+   },
+   {
      path: "/homeandlifestyle",
      element: <HomeAndLifestyle />,
    },
 
    {
      path: "/electronics",
-     element: <Electronics/>,
+     element: <Electronics />,
    },
    {
      path: "*",
