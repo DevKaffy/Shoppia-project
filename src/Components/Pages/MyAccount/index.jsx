@@ -36,21 +36,24 @@ const MyAccount = () => {
           <img src="/Search.svg" alt="" />
         </div>
         <div className="flex items-center gap-4 pl-[1.8rem]">
-          <img src="/Wishlist.svg" alt="" />
-          <img src="/Cart1.svg" alt="" />
+          <img className="cursor-pointer" src="/Wishlist.svg" alt="" />
+          <img className="cursor-pointer" src="/Cart1.svg" alt="" />
           <img
-              src="/user.svg"
-              className="dropdown-trigger"
-              onClick={toggleDropdown}
-              alt=""
-            />
-         
+            src="/user.svg"
+            className="dropdown-trigger"
+            onClick={toggleDropdown}
+            alt=""
+          />
+
           {isOpen && (
             <div className="dropdown-content">
               {/* Dropdown profile content */}
               <ul>
                 <li className="side-list">
-                  <img className='h-[24px] w-[24px]' src="/profilr.svg" alt="" />
+                  <img
+                    src="/profilr.svg"
+                    alt=""
+                  />
                   <p>Manage My Account</p>
                 </li>
                 <li className="side-list">
