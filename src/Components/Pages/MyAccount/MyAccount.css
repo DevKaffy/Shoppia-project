@@ -1,0 +1,28 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-trigger {
+  cursor: pointer;
+  /* Style the trigger element */
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  right: 5%;
+  background-color:#DB4444;
+  color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 1;
+}
+.side-list{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    margin-bottom: 10px;
+}

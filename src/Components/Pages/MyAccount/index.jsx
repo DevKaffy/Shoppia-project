@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import Category from '../../Category/Category';
 import Sidebar from '../../Sidebar';
 import Products from '../../Products/Products';
+import './MyAccount.css'
 
 const MyAccount = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div>
       <div className="navbar">
@@ -32,7 +38,32 @@ const MyAccount = () => {
         <div className="flex items-center gap-4 pl-[1.8rem]">
           <img src="/Wishlist.svg" alt="" />
           <img src="/Cart1.svg" alt="" />
-          <img src="/user.svg" alt="" />
+          <img
+              src="/user.svg"
+              className="dropdown-trigger"
+              onClick={toggleDropdown}
+              alt=""
+            />
+         
+          {isOpen && (
+            <div className="dropdown-content">
+              {/* Dropdown profile content */}
+              <ul>
+                <li className="side-list">
+                  <img className='h-[24px] w-[24px]' src="/profilr.svg" alt="" />
+                  <p>Manage My Account</p>
+                </li>
+                <li className="side-list">
+                  <img src="/order.svg" alt="" />
+                  <p>Order</p>
+                </li>
+                <li className="side-list">
+                  <img src="/icon-cancel.svg" alt="" />
+                  <p>My cancellations</p>
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
       </div>
       <main className="home">
