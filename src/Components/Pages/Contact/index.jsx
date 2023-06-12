@@ -28,7 +28,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="pt-[2.5rem] pl-8 pr-8 border">
-          <div className="input-container">
+          <div className="input-wrapper">
             <input type="text" placeholder="Your Name" />
             <input type="text" placeholder="Your Email" />
             <input type="text" placeholder="Your Phone" />
