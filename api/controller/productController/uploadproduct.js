@@ -6,6 +6,17 @@
 const Product = require('../../models/product');
 const { body, validationResult } = require('express-validator');
 const multer = require('multer');
+const cloudinary = require('cloudinary').v2;
+
+require('dotenv').config({ path: '../../.env' });
+
+
+// Configure Cloudinary with your API key and secret
+cloudinary.config({
+  cloud_name: process.env.CLOUDNAME,
+  api_key: process.env.API_KEY,
+  api_secret: process.env.API_SECRET,
+});
 
 // Configure multer for file upload
 const storage = multer.diskStorage({
@@ -51,24 +62,15 @@ const createProductValidator = [
 
 const createProduct = async (req, res) => {
   try {
-    // Validate inputs
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
+      const errors = validationResult(req);
+      if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
     }
-
+    // Upload the image file to Cloudinary
+    const result = await cloudinary.uploader.upload(req.file.path);
+    
     const { title, description, price, campus, quantity, category } = req.body;
-
     const { userId } = req.params;
-    // Get the uploaded image file path
-
-    if (!req.file) {
-      return res.status(400).json({ error: `Image file is required` });
-    }
-	if (req.file === undefined) {
-	  return res.status(400).json({error: 'Image file is required'});
-	}
-    const imagePath = req.file.path;
 
     // Create a new product using the Product model
     const newProduct = await Product.create({
@@ -79,7 +81,7 @@ const createProduct = async (req, res) => {
       campus,
       quantity,
       category,
-      imageUrl: imagePath, // Store the image file path in the imageUrl field
+      imageUrl: result.secure_url, // Store the secure URL provided by Cloudinary
     });
 
     return res.status(201).json(newProduct);
@@ -101,5 +103,5 @@ const createProduct = async (req, res) => {
 module.exports = {
   createProductValidator,
   createProduct,
-  upload, // Export the multer upload object for route configuration
+  upload,
 };
