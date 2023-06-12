@@ -50,11 +50,8 @@ const MyAccount = () => {
               {/* Dropdown profile content */}
               <ul>
                 <li className="side-list">
-                  <img
-                    src="/profilr.svg"
-                    alt=""
-                  />
-                  <p>Manage My Account</p>
+                  <img src="/profilr.svg" alt="" />
+                  <Link to="/productupload">Manage My Account</Link>
                 </li>
                 <li className="side-list">
                   <img src="/order.svg" alt="" />
@@ -63,6 +60,14 @@ const MyAccount = () => {
                 <li className="side-list">
                   <img src="/icon-cancel.svg" alt="" />
                   <p>My cancellations</p>
+                </li>
+                <li className="side-list">
+                  <img src="/Icon-Reviews.svg" alt="" />
+                  <p>My Reviews</p>
+                </li>
+                <li className="side-list">
+                  <img src="/public/Icon-logout.svg" alt="" />
+                  <p>Logout</p>
                 </li>
               </ul>
             </div>
