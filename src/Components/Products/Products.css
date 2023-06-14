@@ -2,5 +2,5 @@
     @apply flex flex-wrap items-center justify-between border-b pb-[3.75rem];
 }
 .product-image{
-    @apply bg-black pr-8 pl-8 pt-[5px] pb-[5px] text-white w-full rounded-[5px] ;
+    @apply bg-black pr-8 pl-8 pt-[5px] pb-[5px] text-white w-full rounded-[5px];
 }

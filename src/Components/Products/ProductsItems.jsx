@@ -30,7 +30,7 @@ const ProductsItems = ({ image, title, price, productId }) => {
     }
   };
 
-  const formattedPrice = `₦${price}`;
+  const formattedPrice = `${price}`;
 
   return (
     <div>

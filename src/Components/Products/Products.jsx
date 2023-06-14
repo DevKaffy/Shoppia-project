@@ -5,6 +5,7 @@ import { Slide } from 'react-slideshow-image'
 import ProductsItems from './ProductsItems'
 import "react-slideshow-image/dist/styles.css";
 
+
 const Products = () => {
   const slideRef = useRef(null);
   const [imageGroups, setImageGroups] = useState([]);
@@ -43,7 +44,7 @@ const Products = () => {
             return (
               <div
                 key={`grp-${index}-key`}
-                className=" w-full h-[100vh] flex flex-wrap items-center gap-8"
+                className="w-full flex flex-wrap items-center gap-8 mb-8"
               >
                 {imgGroup.map((product, index) => (
                   <ProductsItems
