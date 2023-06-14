@@ -80,7 +80,7 @@ const SignUp = () => {
               onChange={handleInputChange}
             />
             {errors.firstname && (
-              <span className="error">{errors.firstname}</span>
+              <span style={{color: 'red'}} className="error">{errors.firstname}</span>
             )}
             <input
               type="text"
@@ -91,7 +91,7 @@ const SignUp = () => {
               onChange={handleInputChange}
             />
             {errors.lastname && (
-              <span className="error">{errors.lastname}</span>
+              <span style={{color: 'red' }} className="error">{errors.lastname}</span>
             )}
             <input
               type="text"
@@ -102,7 +102,7 @@ const SignUp = () => {
               onChange={handleInputChange}
             />
             {errors.username && (
-              <span className="error">{errors.username}</span>
+              <span style={{color: 'red' }} className="error">{errors.username}</span>
             )}
             <input
               type="text"
@@ -112,7 +112,7 @@ const SignUp = () => {
               value={formData.email}
               onChange={handleInputChange}
             />
-            {errors.email && <span className="error">{errors.email}</span>}
+            {errors.email && <span style={{color: 'red' }} className="error">{errors.email}</span>}
             <input
               type="text"
               placeholder="Phone Number"
@@ -122,7 +122,7 @@ const SignUp = () => {
               onChange={handleInputChange}
             />
             {errors.phonenumber && (
-              <span className="error">{errors.phonenumber}</span>
+              <span style={{color: 'red' }} className="error">{errors.phonenumber}</span>
             )}
             <input
               type="password"
@@ -133,7 +133,7 @@ const SignUp = () => {
               onChange={handleInputChange}
             />
             {errors.password && (
-              <span className="error">{errors.password}</span>
+              <span style={{color: 'red' }} className="error">{errors.password}</span>
             )}
             {errors.generic && <span className="error">{errors.generic}</span>}
             <button className="w-full bg-[rgb(219,68,68)] pt-[1rem] pb-[1rem] rounded-[4px] text-[white] mt-[2.5rem] mb-4">
