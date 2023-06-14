@@ -1,4 +1,4 @@
-/*import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import ProductsItems from './ProductsItems';
 
@@ -82,4 +82,4 @@ const Products = () => {
   );
 };
 
-export default Products;*/
+export default Products;

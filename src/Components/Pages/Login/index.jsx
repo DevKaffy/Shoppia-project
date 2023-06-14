@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Layout from "../../Layout";
 
 const Login = () => {
@@ -28,26 +28,20 @@ const Login = () => {
 
       if (response.ok) {
         // Successful login
-        //const token = response.headers.get("authorization");
         const { token, userId } = data;
-        // Store the token in localStorage
         localStorage.setItem("token", token);
         localStorage.setItem("userId", userId);
-        //const { userId } = data;
-        navigate(`/`);
+        navigate(`/myaccount`); // Redirect to the "myaccount" page
       } else {
-        // Error occurred
         if (data && data.errors) {
           if (Array.isArray(data.errors)) {
             // Validation errors
             const errorsMap = {};
             data.errors.forEach((error) => {
-              // Map each error to its corresponding field
               errorsMap[error.param] = error.msg;
             });
             setErrors(errorsMap);
           } else {
-            // Other errors
             setErrors({ general: data.errors });
           }
         } else {
@@ -88,14 +82,12 @@ const Login = () => {
             )}
             {errors.general && <p style={{ color: "red" }}>{errors.general}</p>}
             <div className="flex items-center justify-between mt-[3.5rem] mb-4">
-              <Link to="/myaccount">
-                <button
-                  className="bg-[#DB4444] pt-[1rem] pb-[1rem] pr-[3rem] pl-[3rem] rounded-[4px] text-[white]"
-                  type="submit"
-                >
-                  Log In
-                </button>
-              </Link>
+              <button
+                className="bg-[#DB4444] pt-[1rem] pb-[1rem] pr-[3rem] pl-[3rem] rounded-[4px] text-[white]"
+                type="submit"
+              >
+                Log In
+              </button>
               <p className="text-[#DB4444] cursor-pointer">Forget Password?</p>
             </div>
           </form>
