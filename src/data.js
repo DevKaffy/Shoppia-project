@@ -141,6 +141,26 @@ export const products = [
     title: "S-Series Comfort Chair ",
     price: "₦3755",
   },
+  {
+    image: "/pes.png",
+    title: "HAVIT HV-G92 Gamepad",
+    price: "₦1120",
+  },
+  {
+    image: "/keyboard.png",
+    title: "AK-900 Wired Keyboard",
+    price: "₦9600",
+  },
+  {
+    image: "/TV.png",
+    title: "IPS LCD Gaming Monitor",
+    price: "₦3700",
+  },
+  {
+    image: "/chair.png",
+    title: "S-Series Comfort Chair ",
+    price: "₦3755",
+  },
 ];
 
 export const categories = [

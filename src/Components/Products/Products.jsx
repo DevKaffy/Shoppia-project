@@ -30,9 +30,11 @@ const Products = () => {
    useEffect(() => {
      const list = [];
 
-     for (let i = 0; i < products.length; i += 11) {
-       list.push(products.slice(i, i + 11));
+     for (let i = 0; i < products.length; i += 12) {
+        const sliceProducts = products.slice(i, i + 12);
+       list.push(sliceProducts);
      }
+
      setImageGroups(list);
    }, []);
 
