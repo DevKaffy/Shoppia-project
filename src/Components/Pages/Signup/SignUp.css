@@ -1,5 +1,5 @@
 .signup{
-    @apply grid grid-cols-[2fr_1fr] pt-[3.75rem];
+    @apply block lg:grid grid-cols-[2fr_1fr] pt-[3.75rem];
 }
 .signup-img{
     @apply w-[50.31rem] h-[48.81rem];

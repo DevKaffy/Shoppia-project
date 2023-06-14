@@ -20,10 +20,6 @@ const Home = () => {
                 <img src="/Rectangle 18.png" alt="" />
                 <div className="text-[#DB4444] font-semibold">Products</div>
               </div>
-              <div className="flex justify-end gap-4 mb-[2.5rem]">
-                <img src="/Fill With Left Arrow.png" alt="" />
-                <img src="/Fill with Right Arrow.png" alt="" />
-              </div>
               <Products />
             </div>
           </div>

@@ -31,7 +31,7 @@ const About = () => {
           </div>
           <img src="/rightpic.png" alt="" />
         </div>
-        <div className="flex flex-wrap gap-[1.5rem] mt-[8rem] items-center">
+        <div className="block lg:flex flex-wrap gap-[1.5rem] mt-[8rem] items-center">
           <div>
             <div className="w-[23.12rem] h-[26.8rem] mb-[3rem]">
               <img className="contain" src="/Kafilat.jpg" alt="" />
@@ -93,8 +93,7 @@ const About = () => {
           </div>
         </div>
         <div className="mt-[2rem]">
-          <Link to="/CheckOutPage">Check out</Link> <br />
-          <Link to="/ProductUpload">Product Upload</Link>
+          <Link to="/CheckOutPage">Check out</Link>
         </div>
       </main>
     </Layout>

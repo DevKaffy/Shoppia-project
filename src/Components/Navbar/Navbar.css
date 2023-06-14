@@ -1,5 +1,5 @@
 .navbar{
-@apply flex items-center justify-center pl-[5rem] pr-[3rem] pt-[2.3rem] pb-4 border-b-[1px];
+@apply block lg:flex items-center justify-center pl-[2rem] lg:pl-[5rem] pr-[2rem] lg:pr-[3rem] pt-[2.3rem] pb-4 border-b-[1px];
 }
 .nav-items :hover{
     @apply underline;
@@ -8,7 +8,7 @@
     @apply mr-[6rem] font-bold text-2xl;
 }
 .nav-items{
-    @apply flex items-center gap-8 mr-[4rem];
+    @apply block lg:flex items-center gap-4 lg:gap-8 mr-[4rem];
 }
 .search{
     @apply flex items-center gap-[2.3rem] bg-[#F5F5F5] pt-[0.62rem] pb-[0.62rem] pl-[1.25rem] pr-[0.75rem] rounded-[5px];

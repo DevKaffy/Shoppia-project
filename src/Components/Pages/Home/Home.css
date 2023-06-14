@@ -1,6 +1,6 @@
 .home{
-    @apply pl-[5rem] pt-[2.5rem] pr-[5rem];
+    @apply pl-[2rem] lg:pl-[5rem] pt-[2.5rem] pr-[2rem] lg:pr-[5rem];
 }
 .top-items{
-    @apply grid grid-cols-[16rem_2fr] mb-[8rem];
+    @apply block lg:grid grid-cols-[16rem_2fr] mb-[8rem];
 }

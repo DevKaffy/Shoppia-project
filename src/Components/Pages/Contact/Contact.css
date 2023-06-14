@@ -1,8 +1,8 @@
 .contact{
-    @apply grid grid-cols-[15rem_1fr] gap-8 pt-[3.75rem] pl-[5rem] pr-[8rem];
+    @apply block lg:grid grid-cols-[15rem_1fr] gap-8 pt-[3.75rem] pl-[2rem] pr-[2rem] lg:pl-[5rem] lg:pr-[8rem];
 }
 .input-wrapper{
-    @apply flex items-center gap-8 pb-8;
+    @apply block lg:flex items-center gap-8 pb-8;
 }
 .input-wrapper input {
     @apply pt-[0.81rem] pb-[0.81rem] pl-4  outline-none rounded-[5px];
