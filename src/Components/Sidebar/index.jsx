@@ -12,8 +12,8 @@ const Sidebar = () => {
           <SidebarItem 
           key={`items = ${index}`}
           title = {item.title}
-          icon = {item.icon}
-          
+          // icon = {item.icon}
+          path = {item.path}
           />
         ))
        }

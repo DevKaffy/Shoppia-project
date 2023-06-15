@@ -2,41 +2,43 @@ export const items = [
   {
     title: "Women's Fashion",
     icon: "/arrow-drop-down-line.svg",
-    path: "/WomenFashion"
+    path: "/womenfashion",
   },
   {
     title: "Men's Fashion",
     icon: "/arrow-drop-down-line.svg",
+    path: "/menfashion"
   },
   {
     title: "Electronics",
     icon: "/arrow-drop-down-line.svg",
-    path: "/Electronics",
+    path: "/electronics",
   },
   {
     title: "Home & Lifestyle",
     icon: "/arrow-drop-down-line.svg",
-    path: "/HomeAndLifestyle",
+    path: "/homeandlifestyle",
   },
   {
     title: "Medicine",
     icon: "/arrow-drop-down-line.svg",
-    path: "/Medicine",
+    path: "/medicine"
   },
   {
     title: "Sports & Outdoor",
     icon: "/arrow-drop-down-line.svg",
-    path: "/Sports & outdoor",
+    path: "/sportsandoutdoor"
+
   },
   {
     title: "Groceries & Pets",
     icon: "/arrow-drop-down-line.svg",
-    path: "/Groceries & Pets",
+    path: "/groceriesandpets",
   },
   {
     title: "Health & Beauty",
     icon: "/arrow-drop-down-line.svg",
-    path: "/Health & Beauty",
+    path: "/healthandbeauty",
   },
 ];
 
@@ -141,26 +143,7 @@ export const products = [
     title: "S-Series Comfort Chair ",
     price: "₦3755",
   },
-  {
-    image: "/pes.png",
-    title: "HAVIT HV-G92 Gamepad",
-    price: "₦1120",
-  },
-  {
-    image: "/keyboard.png",
-    title: "AK-900 Wired Keyboard",
-    price: "₦9600",
-  },
-  {
-    image: "/TV.png",
-    title: "IPS LCD Gaming Monitor",
-    price: "₦3700",
-  },
-  {
-    image: "/chair.png",
-    title: "S-Series Comfort Chair ",
-    price: "₦3755",
-  },
+  
 ];
 
 export const categories = [

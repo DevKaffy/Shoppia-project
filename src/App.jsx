@@ -12,6 +12,8 @@ import ProductUpload from './Components/ProductUpload/UploadPage';
 import HomeAndLifestyle from './Components/HomeAndLifestyle/HomeAndLifestyle';
 import Electronics from './Components/Electronics/Electronics';
 import MyAccount from './Components/Pages/MyAccount';
+import WomenFashion from './Components/WomenFashion';
+import MenFashion from './Components/MenFashion';
 
 
 
@@ -53,10 +55,17 @@ const App = () => {
      path: "/homeandlifestyle",
      element: <HomeAndLifestyle />,
    },
-
    {
      path: "/electronics",
      element: <Electronics />,
+   },
+   {
+    path: "/womenfashion",
+    element: <WomenFashion/>
+   },
+   {
+    path: "/menfashion",
+    element: <MenFashion/>
    },
    {
      path: "*",
