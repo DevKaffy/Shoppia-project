@@ -1,5 +1,5 @@
 # Shoppia
-A development of Shoppia E-commerce website using html, css, React, Tailwindcss and Node.js
+A development of Shoppia E-commerce website using html, css, React, Tailwindcss, ExpressJS and Node.js
 
 ## Prequisite
 - Your browser version should be up to date for better experience
