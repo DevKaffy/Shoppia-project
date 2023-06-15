@@ -25,7 +25,7 @@ A development of Shoppia E-commerce website using html, css, React, Tailwindcss,
 ## Developers
 - Adewumi Kafilat Eniola
 - Mathew Ndubuisi
-- Tracy
+- Tracy Wankio
 
 
 ## Additional Info
