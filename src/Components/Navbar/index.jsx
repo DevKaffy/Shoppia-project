@@ -1,8 +1,8 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import './Navbar.css'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ cartCount }) => {
   return (
     <div className="navbar">
       <h2 className="shoppia">Shoppia</h2>
@@ -29,10 +29,15 @@ const Navbar = () => {
       </div>
       <div className="flex items-center gap-4 pl-[1.8rem]">
         <img src="/Wishlist.svg" alt="" />
-        <img src="/Cart1.svg" alt="" />
+        <div className="cart-icon">
+          <Link to="/checkoutpage">
+            <img src="/Cart1.svg" alt="" />
+            {cartCount > 0 && <span className="cart-count">{cartCount}</span>}
+          </Link>
+        </div>
       </div>
     </div>
   );
-}
+};
 
-export default Navbar
+export default Navbar;

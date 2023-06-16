@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './Products.css';
 
-const ProductsItems = ({ image, title, price, productId }) => {
+
+const ProductsItems = ({ image, title, price, productId, onAddToCart }) => {
   const [cartCount, setCartCount] = useState(0);
   const userId = localStorage.getItem('userId');
-  //const token = localStorage.getItem('token');
 
   const handleClick = async () => {
     try {
@@ -20,17 +20,18 @@ const ProductsItems = ({ image, title, price, productId }) => {
           },
         }
       );
-      const { message } = response.data;
+      const { message } = response.data || {};
 
-      alert(message);
+      alert(message || 'Item added to cart.');
 
       setCartCount(response.data.count);
+      onAddToCart();
     } catch (error) {
       console.error('Error adding to cart:', error);
     }
   };
 
-  const formattedPrice = `${price}`;
+  const formattedPrice = `₦${price}`;
 
   return (
     <div>

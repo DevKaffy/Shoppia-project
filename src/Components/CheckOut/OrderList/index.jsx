@@ -1,79 +1,81 @@
-import React from 'react'
-import OrderItem from '../OrderItem'
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 function OrderList() {
+  const [products, setProducts] = useState([]);
+  const [grandTotal, setGrandTotal] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
 
+  useEffect(() => {
+    const fetchCartData = async () => {
+      try {
+        const userId = localStorage.getItem('userId');
+        const token = localStorage.getItem('token');
+        const response = await axios.get(`https://shoppia-production.up.railway.app/api/v1/users/${userId}/carts`, {
+          headers: {
+            Authorization: token,
+          },
+        });
+        if (response.data && response.data.products) {
+          const { products, grandTotal } = response.data;
+          setProducts(products);
+          setGrandTotal(grandTotal);
+        } else {
+          setProducts([]);
+          setGrandTotal(0);
+        }
+      } catch (error) {
+        console.error('Error fetching cart data:', error);
+      }
+      setIsLoading(false);
+    };
 
-    // dummy data (orders shall be passed from home page)
-    const orders= [{
-        ItemID:1,
-        image: 'https://i.pinimg.com/236x/a6/e3/4d/a6e34dac0100628559401d1f65327727.jpg',
-        name:'Headphones',
-        desc: 'Dual noise sensor technology, featuring two microphones on each earcup, captures ambient noise and passes the data to the HD Noise Cancelling Processor QN1',
-        price:300,
-        quantity:3
-    },
-        {
-        ItemID:2,
-        image:'https://i.pinimg.com/236x/8e/b1/0d/8eb10d1ade19d2e8a8348de0139983ae.jpg',
-        name:'First Aid kit',
-        desc:'This First Aid Box is medium-sized and can be used for the collection of supplies and equipment for use in giving first aid.The box is durable and can serve as a made medical emergency box for the family and office',
-        price:7000,
-        quantity:1
-        },
-        {
-          ItemID:3,
-          image:'https://i.pinimg.com/236x/c9/6d/01/c96d015d5c7c90df8da9ba6f0f9286d5.jpg',
-          desc: 'Experience the new kansa Boxing Gloves are built to be the only pair of boxing gloves youll ever need. Whether youre doing Heavy Bag Training, Fitness Workouts, or Sparring with a partner, they are designed to keep your hands and wrists protected from the abuse',
-          name:'Boxing gloves',
-          price:900,
-          quantity:2
-          }
-]
+    fetchCartData();
+  }, []);
 
-
-const tablebody=orders.map(item => <OrderItem key={orders.ItemID} item={item}/>)
-
-// Calculate the total
-const total = orders.reduce(
-  (sum, item) => sum + item.price * item.quantity,
-  0
-);
-
+  if (isLoading) {
+    return <p>Loading...</p>;
+  }
 
   return (
-    <div className='centre-table'>
-
-      <table className="checkout-table">
-      <thead>
-        <tr>
-          <th></th>
-          <th>Product</th>
-          <th>Price</th>
-          
-          <th>Total</th>
-      
-          <th>Quantity</th>
-  
-        </tr>
-      </thead>
-
-      <tbody>
-        {tablebody}
-      </ tbody>
-
-      <tfoot>
-          <tr>
-            <td colSpan="3"></td>
-            <td>Total:</td>
-            <td>₦{total}</td>
-          </tr>
-        </tfoot>
-
-      </table>
-    
+    <div>
+      <h2>Cart Items</h2>
+      {products && products.length === 0 ? (
+        <p>Your cart is empty!</p>
+      ) : (
+        <>
+          <table>
+            <thead>
+              <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              {products.map((product) => (
+                <tr key={product.id}>
+                  <td>
+                    <img src={product.imageUrl} alt="Product Image" />
+                  </td>
+                  <td>
+                    {product.title}
+                    <p className="desc">{product.description}</p>
+                  </td>
+                  <td>₦{product.price}</td>
+                  <td>{product.quantity}</td>
+                  <td>₦{product.totalPrice}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <p>Grand Total: ₦{grandTotal}</p>
+        </>
+      )}
     </div>
-  )
+  );
 }
 
 export default OrderList;
