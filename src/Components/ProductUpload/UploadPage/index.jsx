@@ -33,7 +33,7 @@ class ProductUpload extends Component {
           
 
           <div className="mainshop-div">
-            <img src="https://graphicriver.img.customer.envatousercontent.com/files/256521320/bookmockup_preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=8dbf168b145bbec1aa5f0c7e60d9748b" alt="Shop banner" className="shop-banner" />
+            {/* <img src="https://graphicriver.img.customer.envatousercontent.com/files/256521320/bookmockup_preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=8dbf168b145bbec1aa5f0c7e60d9748b" alt="Shop banner" className="shop-banner" /> */}
 
             <div className="products-list" style={{ display: 'grid', gridTemplateRows: 'auto 90%' }}>
               <div>

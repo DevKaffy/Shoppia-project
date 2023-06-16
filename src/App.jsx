@@ -14,6 +14,7 @@ import Electronics from './Components/Electronics/Electronics';
 import MyAccount from './Components/Pages/MyAccount';
 import WomenFashion from './Components/WomenFashion';
 import MenFashion from './Components/MenFashion';
+import ProductDetail from './Components/Pages/ProductDetail';
 
 
 
@@ -22,6 +23,10 @@ const App = () => {
    {
      path: "/",
      element: <Home />,
+   },
+   {
+     path: "/:id",
+     element: <ProductDetail />,
    },
    {
      path: "/contact",
@@ -60,12 +65,12 @@ const App = () => {
      element: <Electronics />,
    },
    {
-    path: "/womenfashion",
-    element: <WomenFashion/>
+     path: "/womenfashion",
+     element: <WomenFashion />,
    },
    {
-    path: "/menfashion",
-    element: <MenFashion/>
+     path: "/menfashion",
+     element: <MenFashion />,
    },
    {
      path: "*",

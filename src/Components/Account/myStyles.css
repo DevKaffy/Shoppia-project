@@ -349,7 +349,7 @@
     padding-left : 5px;
     width: 1300px;
     display: grid;
-    grid-template-columns: [leftshop] 40% [rightshop] 60%;
+    /* grid-template-columns: [leftshop] 40%[rightshop] 60%; */
     /*grid-template-rows: [topupload] 80% [middleuploadvert] auto [bottomupload] auto ;*/
 
   }
@@ -529,10 +529,10 @@
   
 }
 
-.products-list{
+/* .products-list{
   grid-column: rightshop;
   
-}
+} */
 
 .product-mini-div {
  

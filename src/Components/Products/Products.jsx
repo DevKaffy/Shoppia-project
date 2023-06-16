@@ -3,6 +3,7 @@ import axios from 'axios';
 import ProductsItems from './ProductsItems';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
+import { useNavigate } from 'react-router-dom';
 
 const Products = () => {
   const slideRef = useRef(null);
@@ -10,7 +11,7 @@ const Products = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [cartCount, setCartCount] = useState(0);
-
+const navigate=useNavigate()
   const settings = {
     duration: 5000,
     autoplay: false,
@@ -61,28 +62,43 @@ const Products = () => {
         <Slide ref={slideRef} {...settings}>
           <div className="w-full flex flex-wrap items-center gap-8 mb-8">
             {products.map((product, index) => (
-              <ProductsItems
+              <div
                 key={`products-${index}`}
-                image={product.imageUrl}
-                title={product.title}
-                price={product.price}
-                productId={product.id}
-                onAddToCart={handleAddToCart} // Pass the onAddToCart function to the ProductsItems component
-              />
+                onClick={() => navigate(`/${product.id}`)}
+              >
+                <ProductsItems
+                  id={product.id}
+                  image={product.imageUrl}
+                  title={product.title}
+                  price={product.price}
+                  productId={product.id}
+                  onAddToCart={handleAddToCart} // Pass the onAddToCart function to the ProductsItems component
+                />
+              </div>
             ))}
           </div>
         </Slide>
       </div>
 
       <div className="flex justify-end gap-4 mb-[2.5rem] w-full">
-        <img src="/Fill With Left Arrow.png" alt="" onClick={() => toggleSlide('prev')} />
-        <img src="/Fill with Right Arrow.png" alt="" onClick={() => toggleSlide('next')} />
+        <img
+          src="/Fill With Left Arrow.png"
+          alt=""
+          onClick={() => toggleSlide("prev")}
+        />
+        <img
+          src="/Fill with Right Arrow.png"
+          alt=""
+          onClick={() => toggleSlide("next")}
+        />
       </div>
 
-      <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem' }}>
+      <div
+        style={{ display: "flex", justifyContent: "center", marginTop: "1rem" }}
+      >
         {currentPage > 1 && (
           <button
-            style={{ fontSize: '1.5rem', color: 'red', marginRight: '1rem' }}
+            style={{ fontSize: "1.5rem", color: "red", marginRight: "1rem" }}
             onClick={() => setCurrentPage((prevPage) => prevPage - 1)}
           >
             &lt; Prev
@@ -93,10 +109,10 @@ const Products = () => {
           <button
             key={`page-${index + 1}`}
             style={{
-              fontSize: '1.5rem',
-              margin: '0 0.5rem',
-              fontWeight: currentPage === index + 1 ? 'bold' : 'normal',
-              color: currentPage === index + 1 ? 'red' : 'black',
+              fontSize: "1.5rem",
+              margin: "0 0.5rem",
+              fontWeight: currentPage === index + 1 ? "bold" : "normal",
+              color: currentPage === index + 1 ? "red" : "black",
             }}
             onClick={() => setCurrentPage(index + 1)}
           >
@@ -106,7 +122,7 @@ const Products = () => {
 
         {currentPage < totalPages && (
           <button
-            style={{ fontSize: '1.5rem', color: 'red', marginLeft: '1rem' }}
+            style={{ fontSize: "1.5rem", color: "red", marginLeft: "1rem" }}
             onClick={() => setCurrentPage((prevPage) => prevPage + 1)}
           >
             Next &gt;

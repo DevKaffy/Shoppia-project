@@ -11,8 +11,8 @@ const Sidebar = () => {
         items.map((item, index)=>(
           <SidebarItem 
           key={`items = ${index}`}
+          id = {item.id}
           title = {item.title}
-          // icon = {item.icon}
           path = {item.path}
           />
         ))
