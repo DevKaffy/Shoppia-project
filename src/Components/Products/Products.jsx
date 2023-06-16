@@ -3,7 +3,7 @@ import axios from 'axios';
 import ProductsItems from './ProductsItems';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 const Products = () => {
   const slideRef = useRef(null);
@@ -11,7 +11,7 @@ const Products = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [cartCount, setCartCount] = useState(0);
-const navigate=useNavigate()
+
   const settings = {
     duration: 5000,
     autoplay: false,
@@ -62,11 +62,9 @@ const navigate=useNavigate()
         <Slide ref={slideRef} {...settings}>
           <div className="w-full flex flex-wrap items-center gap-8 mb-8">
             {products.map((product, index) => (
-              <div
-                key={`products-${index}`}
-                onClick={() => navigate(`/${product.id}`)}
-              >
+              // <div>
                 <ProductsItems
+                  key={`products-${index}`}
                   id={product.id}
                   image={product.imageUrl}
                   title={product.title}
@@ -74,7 +72,7 @@ const navigate=useNavigate()
                   productId={product.id}
                   onAddToCart={handleAddToCart} // Pass the onAddToCart function to the ProductsItems component
                 />
-              </div>
+              // </div>
             ))}
           </div>
         </Slide>
@@ -92,7 +90,6 @@ const navigate=useNavigate()
           onClick={() => toggleSlide("next")}
         />
       </div>
-
       <div
         style={{ display: "flex", justifyContent: "center", marginTop: "1rem" }}
       >
@@ -104,7 +101,6 @@ const navigate=useNavigate()
             &lt; Prev
           </button>
         )}
-
         {[...Array(totalPages)].map((_, index) => (
           <button
             key={`page-${index + 1}`}
@@ -119,7 +115,7 @@ const navigate=useNavigate()
             {index + 1}
           </button>
         ))}
-
+        
         {currentPage < totalPages && (
           <button
             style={{ fontSize: "1.5rem", color: "red", marginLeft: "1rem" }}
