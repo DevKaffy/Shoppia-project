@@ -37,7 +37,6 @@
   background-image: url('https://i.pinimg.com/236x/45/dd/e9/45dde9abda3759ea74dc7959ac7e6227.jpg');
   background-repeat: no-repeat;
   background-size: contain;
- 
   background-position: bottom;
 
 
@@ -48,9 +47,6 @@
   height:60px;
   border-bottom: 5px solid rgb(255, 255, 255); /* Light grey line for every row */
   padding-top: 0px;
-
-  
-
 
 }
 
@@ -353,7 +349,7 @@
     padding-left : 5px;
     width: 1300px;
     display: grid;
-    grid-template-columns: [leftshop] 40% [rightshop] 60%;
+    /* grid-template-columns: [leftshop] 40%[rightshop] 60%; */
     /*grid-template-rows: [topupload] 80% [middleuploadvert] auto [bottomupload] auto ;*/
 
   }
@@ -533,10 +529,10 @@
   
 }
 
-.products-list{
+/* .products-list{
   grid-column: rightshop;
   
-}
+} */
 
 .product-mini-div {
  
