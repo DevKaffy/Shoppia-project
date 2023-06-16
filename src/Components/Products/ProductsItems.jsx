@@ -21,12 +21,12 @@ const ProductsItems = ({ image, title, price, productId, onAddToCart, id }) => {
           },
         }
       );
-      const { message } = response.data;
+      const { message } = response.data || {};
 
-      alert(message);
+      alert(message || 'Item added to cart.');
 
       setCartCount(response.data.count);
-      onAddToCart(); // Call the onAddToCart function passed as a prop from Products component
+      onAddToCart();
     } catch (error) {
       console.error('Error adding to cart:', error);
     }

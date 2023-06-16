@@ -37,7 +37,9 @@ const MyAccount = () => {
         </div>
         <div className="flex items-center gap-4 pl-[1.8rem]">
           <img className="cursor-pointer" src="/Wishlist.svg" alt="" />
+          <Link to="/checkoutpage">
           <img className="cursor-pointer" src="/Cart1.svg" alt="" />
+          </Link>
           <img
             src="/user.svg"
             className="dropdown-trigger"
@@ -138,4 +140,4 @@ const MyAccount = () => {
   );
 }
 
-export default MyAccount
+export default MyAccount;
