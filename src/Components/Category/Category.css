@@ -2,7 +2,7 @@
     @apply pt-[5rem] pb-[4.6rem] border-b;
 } 
 .categ-container{
-    @apply border pt-[1.5rem] pb-[1.5rem] pr-[2rem] pl-[2rem] flex flex-col rounded-[4px] items-center justify-center;
+    @apply border pt-[1.5rem] pb-[1.5rem] pr-[2rem] pl-[2rem] flex flex-col flex-wrap rounded-[4px] items-center justify-center;
 }
 .category:hover img{
 filter: brightness(0) invert(1);

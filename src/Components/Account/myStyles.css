@@ -221,10 +221,8 @@
     text-align: center;
   }
 
- 
-
   .comments{
-   
+  
     grid-row: middlechildvert;
     grid-column: 2 / -1;
   }

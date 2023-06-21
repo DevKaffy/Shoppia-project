@@ -4,11 +4,11 @@
 .nav-items :hover{
     @apply underline;
 }
-.shoppia{
-    @apply mr-[6rem] font-bold text-2xl;
+.hoppia{
+    @apply lg:mr-[6rem] mr-4 text-center lg:text-start font-bold text-2xl;
 }
 .nav-items{
-    @apply block lg:flex items-center gap-4 lg:gap-8 mr-[2rem];
+    @apply lg:flex lg:flex-row flex flex-col mb-4  lg:mb-0 items-center gap-4 lg:gap-8 mr-[2rem];
 }
 .search{
     @apply flex items-center gap-[2.3rem] bg-[#F5F5F5] pt-[0.62rem] pb-[0.62rem] pl-[1.25rem] pr-[0.75rem] rounded-[5px];

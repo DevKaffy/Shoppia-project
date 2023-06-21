@@ -73,11 +73,14 @@ class CheckOutPage extends Component {
             <div className="container">
               <OrderList />
 
-              <div className="comments">
-                <form>
+              <div>
+                <form className="comments">
                   <label>Additional Comments to Seller (Optional)</label>
                   <br />
-                  <textarea value={this.state.comments} onChange={this.handleCommentChange}></textarea>
+                  <textarea
+                    value={this.state.comments}
+                    onChange={this.handleCommentChange}
+                  ></textarea>
                 </form>
               </div>
 
@@ -85,8 +88,8 @@ class CheckOutPage extends Component {
                 className="proceed"
                 onClick={this.submitHandler}
                 style={{
-                  backgroundColor: '#ec644b',
-                  color: '#fff',
+                  backgroundColor: "#ec644b",
+                  color: "#fff",
                 }}
               >
                 Place Order
@@ -96,9 +99,9 @@ class CheckOutPage extends Component {
                 href="/myaccount"
                 className="buttonLink"
                 style={{
-                  backgroundColor: '#ec644b',
-                  color: '#fff',
-                  cursor: 'pointer',
+                  backgroundColor: "#ec644b",
+                  color: "#fff",
+                  cursor: "pointer",
                 }}
               >
                 Continue Shopping

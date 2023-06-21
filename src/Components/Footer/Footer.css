@@ -1,5 +1,5 @@
 .footer{
-    @apply mt-[8.75rem] bg-black  text-white pl-[3rem] lg:pl-[8.4rem] pr-[3rem] lg:pr-[8.4rem] pt-[5rem] pb-[2rem];
+    @apply mt-[8.75rem] bg-black  text-white pl-[3rem] lg:pl-[8.4rem] pr-[3rem] lg:pr-[8.4rem] pt-[5rem] pb-[2rem] ml-8 mr-8 lg:ml-0 lg:mr-0;
 }
 .title{
     @apply block lg:flex gap-x-[14rem] font-bold;

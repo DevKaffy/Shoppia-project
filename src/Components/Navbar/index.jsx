@@ -5,7 +5,7 @@ import './Navbar.css';
 const Navbar = ({ cartCount }) => {
   return (
     <div className="navbar">
-      <h2 className="shoppia">Shoppia</h2>
+      <h2 className="hoppia">Shoppia</h2>
       <div className="nav-items">
         <Link to="/">Home</Link>
         <Link to="/contact">Contact</Link>
