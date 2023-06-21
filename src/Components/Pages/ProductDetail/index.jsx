@@ -5,6 +5,7 @@ import './productDetail.css'
 
 const ProductDetail = () => {
     const {id}= useParams()
+    console.log("id: ", id);
 const [productDetail, setproductDetail] = useState("")
     const fetchProduct = async () => {
   try {
