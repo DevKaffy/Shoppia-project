@@ -7,6 +7,7 @@ const ProductDetail = () => {
     const {id}= useParams()
     console.log("id: ", id);
 const [productDetail, setproductDetail] = useState("")
+console.log(productDetail)
     const fetchProduct = async () => {
   try {
     const response = await axios.get(
@@ -26,9 +27,13 @@ const [productDetail, setproductDetail] = useState("")
     <> 
     <div className='product-detail'>
         <img src={productDetail.imageUrl} alt="" />
-        <div>
-        <p>{productDetail.campus}</p>
+        <div className='flex flex-col gap-4'>
+        <p className='font-bold text-[2rem]'>{productDetail.title}</p>
+        <p className='font-semibold text-2xl'>{productDetail.campus}</p>
+        <p className='font-medium text-xl'>{productDetail.category}</p>
         <p>{productDetail.description}</p>
+        <p className='font-bold'>{productDetail.price}</p>
+        <p>{productDetail.quantity}</p>
         </div>
     </div>
     </>
