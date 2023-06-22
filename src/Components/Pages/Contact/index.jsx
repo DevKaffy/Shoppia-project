@@ -23,8 +23,8 @@ const Contact = () => {
             <div className="pt-4">
               Fill out our form and we will contact you within 24 hours.
             </div>
-            <div className="pt-4">Emails: customer@exclusive.com</div>
-            <div className="pt-4">Emails: support@exclusive.com</div>
+            <div className="pt-4">Emails: customer@shoppia.com</div>
+            <div className="pt-4">Emails: support@shoppia.com</div>
           </div>
         </div>
         <div className="pt-[2.5rem] pl-8 pr-8 border">
