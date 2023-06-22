@@ -26,8 +26,10 @@ const [productDetail, setproductDetail] = useState("")
     <> 
     <div className='product-detail'>
         <img src={productDetail.imageUrl} alt="" />
+        <div>
         <p>{productDetail.campus}</p>
         <p>{productDetail.description}</p>
+        </div>
     </div>
     </>
   );
