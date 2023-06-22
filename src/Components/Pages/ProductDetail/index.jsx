@@ -26,14 +26,16 @@ console.log(productDetail)
   return (
     <> 
     <div className='product-detail'>
-        <img src={productDetail.imageUrl} alt="" />
+      <div className='w-full'>
+        <img className='bg-cover' src={productDetail.imageUrl} alt="" />
+      </div>
         <div className='flex flex-col gap-4'>
         <p className='font-bold text-[2rem]'>{productDetail.title}</p>
         <p className='font-semibold text-2xl'>{productDetail.campus}</p>
         <p className='font-medium text-xl'>{productDetail.category}</p>
         <p>{productDetail.description}</p>
-        <p className='font-bold'>{productDetail.price}</p>
-        <p>{productDetail.quantity}</p>
+        <p className='font-bold'>Price: {productDetail.price}</p>
+        <p>Quantity: {productDetail.quantity}</p>
         </div>
     </div>
     </>
