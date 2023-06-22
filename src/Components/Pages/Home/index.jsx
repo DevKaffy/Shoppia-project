@@ -16,7 +16,7 @@ const Home = () => {
         <div className="main-container">
           <div>
             <div>
-              <div className="flex gap-4 items-center mb-[1rem]">
+              <div className="flex gap-4 items-center mb-[2rem]">
                 <img src="/Rectangle 18.png" alt="" />
                 <div className="text-[#DB4444] font-semibold">Products</div>
               </div>
@@ -24,7 +24,7 @@ const Home = () => {
             </div>
           </div>
           <div className="categories">
-            <div className="flex gap-4 items-center mb-[1rem]">
+            <div className="flex gap-4 items-center mb-[2rem]">
               <img src="/Rectangle 18.png" alt="" />
               <div className="text-[#DB4444] font-semibold">Categories</div>
             </div>

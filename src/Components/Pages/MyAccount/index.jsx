@@ -14,7 +14,7 @@ const MyAccount = () => {
   return (
     <div>
       <div className="navbar">
-        <h2 className="shoppia">Shoppia</h2>
+        <h2 className="hoppia">Shoppia</h2>
         <div className="nav-items">
           <Link to="/">Home</Link>
           <Link to="/contact">Contact</Link>
@@ -84,19 +84,19 @@ const MyAccount = () => {
         <div className="main-container">
           <div>
             <div>
-              <div className="flex gap-4 items-center mb-[1rem]">
+              <div className="flex gap-4 items-center mb-[2rem]">
                 <img src="/Rectangle 18.png" alt="" />
                 <div className="text-[#DB4444] font-semibold">Products</div>
               </div>
-              <div className="flex justify-end gap-4 mb-[2.5rem]">
+              {/* <div className="flex justify-end gap-4 mb-[2.5rem]">
                 <img src="/Fill With Left Arrow.png" alt="" />
                 <img src="/Fill with Right Arrow.png" alt="" />
-              </div>
+              </div> */}
               <Products />
             </div>
           </div>
           <div className="categories">
-            <div className="flex gap-4 items-center mb-[1rem]">
+            <div className="flex gap-4 items-center mb-[2rem]">
               <img src="/Rectangle 18.png" alt="" />
               <div className="text-[#DB4444] font-semibold">Categories</div>
             </div>
