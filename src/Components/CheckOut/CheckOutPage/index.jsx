@@ -1,7 +1,7 @@
 import '../../Account/myStyles.css';
 import React, { Component } from 'react'
 import OrderList from '../OrderList';
-import AccountSideBar from '../../Account/AccountSideBar';
+// import AccountSideBar from '../../Account/AccountSideBar';
 import Navbar from '../../Navbar';
 import axios from 'axios';
 class CheckOutPage extends Component {

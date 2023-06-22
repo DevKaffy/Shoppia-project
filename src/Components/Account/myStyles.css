@@ -92,9 +92,9 @@
   padding: 35px;
   padding-top: 15px; /* Reduce the padding at the top */
 
-  display: grid ;
+  /* display: grid ;
   grid-template-columns: [leftchild] auto [middlechild] 25% [rightchild] 25% ;
-  grid-template-rows: [topchild] auto [middlechildvert] 120px [bottomchild] 50px ;
+  grid-template-rows: [topchild] auto [middlechildvert] 120px [bottomchild] 50px ; */
 
 
   }
