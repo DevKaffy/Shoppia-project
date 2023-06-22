@@ -1,5 +1,5 @@
 .sidebar{
-    @apply  h-[21.5rem] px-4 overflow-auto;
+    @apply  h-[21.5rem] px-4 mb-4 overflow-auto;
 }
 .sidebar-item{
     padding: 1rem;
